@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 :root {
-  --color1: #1321ff;
-
+  --color-primary: #FFC123;
+  --color-background: #1111;
+  --color-background-main: white;
+  --color-btn:#FFC123;
+  --color-btn-inactive:#777;
+  --color-btn-dark: black;
+  --color-text-ligth: white;
+  --color-text-main:#777;
+  --color-text-dark: black;
 }
 *,
 *::before,
@@ -18,4 +26,5 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Arvo', serif;
 }
