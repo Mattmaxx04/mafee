@@ -1,19 +1,27 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+import { ref } from 'vue';
+import { addPost } from '../firebase/post.js';
+
+
+const texto= ref('')
+const newPost = () => {
+    addPost({
+        id: crypto.randomUUID(),
+        date: Date.now(),
+        texto: texto.value,
+    })
+    texto.value = ''
+}
+
+
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="green"> Hola</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      <input v-model="texto" type="text">
+      <button @click="newPost" type="button" class="btn btn-primary">Post</button>
     </h3>
   </div>
 </template>
