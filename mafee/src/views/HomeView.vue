@@ -5,7 +5,7 @@
 <template>
 
 
-
+<div class="home__news__frame">
     <div class="home__news">
         <h2>NEWS & EVENTS</h2>
         <div class="home__news__cards">
@@ -39,10 +39,14 @@
             </div>
         </div>
     </div>
-
+</div>
 </template>
 
 <style scoped>
+.home__news__frame{
+    background-image: url(../assets/fondo-madera-madera-textura-patron-wallpaper-concepto_53876-14103.jpg);
+}
+
 h2 {
     text-align: center;
 }
