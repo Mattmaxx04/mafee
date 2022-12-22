@@ -14,4 +14,10 @@ import Footer from './components/Footer.vue';
 </template>
 
 <style scoped>
+#Footer{
+  bottom: 0;
+}
+main{
+  min-height: 90vh;
+}
 </style>
