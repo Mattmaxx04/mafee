@@ -44,7 +44,7 @@
 
 <style scoped>
 .home__news__frame{
-    background-image: url(../assets/fondo-madera-madera-textura-patron-wallpaper-concepto_53876-14103.jpg);
+    background-image: url(../assets/background-madera.jpg);
 }
 
 h2 {
@@ -61,7 +61,7 @@ a:hover{
 }
 .home__news {
     padding-top: 2rem;
-    background: var(--color-background);
+    background-image: url(../assets/background-color.jpg);
     margin-left: 2rem;
     margin-right: 2rem;
 }
