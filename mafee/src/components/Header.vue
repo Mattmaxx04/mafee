@@ -16,4 +16,5 @@ import Nav from './Nav.vue';
     height: 10vh;
     width: 100%;
 }
+
 </style>
