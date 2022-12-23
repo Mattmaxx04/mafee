@@ -94,8 +94,63 @@ onMounted(() => {
     </div>
 
     <div class="list__container">
-<List v-for="beer in beers" :beer="beer" :key="beer.id"/>
-</div>
+        <h2>BEER FLAVORS</h2>
+        <List v-for="beer in beers" :beer="beer" :key="beer.id" />
+    </div>
+
+    <div class="home__brew">
+        <div class="brew__img1">
+            <div class="brew__cube1"></div>
+        </div>
+        <div class="brew__img2">
+            <div class="brew__cube2">
+                <img src="../assets/home-04-img-6.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="brew__img3">
+            <div class="brew__cube1"></div>
+        </div>
+    </div>
+
+    <div class="home__icons">
+        <div class="icons">
+            <img src="../assets/main-home-icon-1.png" alt="" srcset="">
+            <h3>BREWING</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam quo repellat recusandae!</p>
+        </div>
+        <div class="icons">
+            <img src="../assets/main-home-icon-4.png" alt="" srcset="">
+            <h3>BEER BARREL</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam quo repellat recusandae!</p>
+        </div>
+        <div class="icons">
+            <img src="../assets/main-home-icon-3.png" alt="" srcset="">
+            <h3>PACKAGING</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam quo repellat recusandae!</p>
+        </div>
+        <div class="icons">
+            <img src="../assets/main-home-icon-2.png" alt="" srcset="">
+            <h3>DRAFT BEER</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam quo repellat recusandae!</p>
+        </div>
+
+    </div>
+
+    <div class="home__culture">
+        <div class="culture__img">
+            <div class="culture__content">
+                <h3>OUR BEER CULTURE</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet esse possimus, totam
+                    necessitatibus at porro a repellendus ex accusamus accusantium amet! Ullam reiciendis odio, cum
+                    laborum recusandae perferendis facilis iste similique illum, porro ipsa est delectus nihil veritatis
+                    corporis!</p>
+                <button class="btn__more">
+                    <p> VIEW MORE </p>
+                </button>
+            </div>
+        </div>
+
+    </div>
 
     <div class="beers">
         <Card v-for="beer in beers" :beer="beer" :key="beer.id" />
@@ -213,7 +268,7 @@ onMounted(() => {
 .home__aromas {
     background-image: url(../assets/background-madera.jpg);
     padding: 1.5rem;
-    
+
 }
 
 .home__aromas__img {
@@ -231,10 +286,12 @@ onMounted(() => {
     display: flex;
     border: 2px var(--color-text-ligth) solid;
 }
-.home__aromas__content img{
+
+.home__aromas__content img {
     margin: 4rem;
 }
-.aromas__text{
+
+.aromas__text {
     display: flex;
     width: 39%;
     color: var(--color-text-ligth);
@@ -243,22 +300,135 @@ onMounted(() => {
     gap: 2rem;
 
 }
-.aromas__text p{
+
+.aromas__text p {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
 /*-------------list--------------------*/
-.list__container{
+.list__container {
     background-image: url(../assets/background-icon-3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     margin: 4rem;
-    
+
+
 }
 
+.list__container h2 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem;
+    font-size: 3rem;
+}
 
+/*--------------homebrew----------------*/
+.home__brew {
+    background-image: url(../assets/background-madera.jpg);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.brew__img1 {
+    background-image: url(../assets/blog-single-img-2.jpg);
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    width: 20vw;
+    padding: 0.5rem;
+}
+
+.brew__img2 {
+    background-image: url(../assets/home-masonry-5.jpg);
+    min-height: 50vh;
+    width: 40vw;
+    padding: 0.5rem;
+}
+
+.brew__img3 {
+    background-image: url(../assets/home-4-img-gallery-4.jpg);
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    width: 20vw;
+    padding: 0.5rem;
+}
+
+.brew__cube1 {
+    width: 100%;
+    height: 100%;
+    border: 2px var(--color-text-ligth) solid;
+}
+
+.brew__cube2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 2px var(--color-text-ligth) solid;
+}
+
+.brew__cube2 img {
+    margin: 1rem;
+}
+
+.brew__cube3 {
+    width: 100%;
+    height: 100%;
+    border: 2px var(--color-text-ligth) solid;
+}
+
+/*----------ICONS--------- */
+.home__icons {
+    display: flex;
+    margin: 4rem;
+    justify-content: space-evenly;
+}
+
+.icons {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 20%;
+    height: 20rem;
+}
+
+.icons h3,
+p {
+    margin: 0.5rem;
+}
+
+/*--------------CULTURE---------------*/
+.home__culture{
+    background-image: url(../assets/background-madera.jpg);
+    padding: 2rem;
+    height: 40rem;
+}
+.culture__img{
+background-image: url(../assets/main-home-slider-12.jpg);
+height: 100%;
+padding: 1rem;
+}
+.culture__content{
+    padding-left: 21rem;
+    padding-right: 21rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px var(--color-text-ligth) solid;
+    height: 100%;
+}
+.culture__content p,h3{
+    color: var(--color-text-ligth);
+}
+.culture__content p{
+    font-size: 1rem;
+    font-weight: 500;
+}
 /*--------------beers------------------*/
 .beers {
     display: flex;
