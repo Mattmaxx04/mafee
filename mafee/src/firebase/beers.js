@@ -15,7 +15,11 @@ const getBeers = () =>{
         const beer = {
           id: doc.id,          
           type: doc.data().type,
-          img: doc.data().img,          
+          img: doc.data().img, 
+          price:  doc.data().price,         
+          info:doc.data().info, 
+          alc:doc.data().alc,
+          ibu:doc.data().ibu
         };
     
         beers.value.push(beer);
