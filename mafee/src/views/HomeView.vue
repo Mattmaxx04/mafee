@@ -3,6 +3,7 @@ import { beers } from '../store/beers.js'
 import { getBeers } from '../firebase/beers.js';
 import { onMounted } from 'vue';
 import Card from '../components/Card.vue';
+import List from '../components/List.vue';
 
 onMounted(() => {
     getBeers()
@@ -91,6 +92,10 @@ onMounted(() => {
         </div>
 
     </div>
+
+    <div class="list__container">
+<List v-for="beer in beers" :beer="beer" :key="beer.id"/>
+</div>
 
     <div class="beers">
         <Card v-for="beer in beers" :beer="beer" :key="beer.id" />
@@ -242,6 +247,18 @@ onMounted(() => {
     font-size: 1.5rem;
     font-weight: 400;
 }
+/*-------------list--------------------*/
+.list__container{
+    background-image: url(../assets/background-icon-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+    
+}
+
+
 /*--------------beers------------------*/
 .beers {
     display: flex;
