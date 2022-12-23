@@ -1,9 +1,19 @@
 <script setup>
+import { beers } from '../store/beers.js'
+import { getBeers } from '../firebase/beers.js';
+import { onMounted } from 'vue';
+import Card from '../components/Card.vue';
+
+onMounted(()=>{
+    getBeers()
+})
 
 </script>
 
 <template>
-
+<div class="beers">
+<Card v-for="beer in beers" :beer="beer" :key="beer.id" />
+</div>
 
 <div class="home__news__frame">
     <div class="home__news">
@@ -43,6 +53,14 @@
 </template>
 
 <style scoped>
+
+.beers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
 .home__news__frame{
     background-image: url(../assets/background-madera.jpg);
 }
