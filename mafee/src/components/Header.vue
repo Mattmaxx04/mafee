@@ -11,10 +11,10 @@ import Nav from './Nav.vue';
 <style scoped>
 
 .header__container{
-    padding-top: 1rem;
     background: var(--color-btn-dark);
     height: 10vh;
     width: 100%;
+    padding-top: 0;
 }
 
 </style>

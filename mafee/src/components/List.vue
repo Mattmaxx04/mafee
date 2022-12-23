@@ -17,12 +17,16 @@ const props = defineProps({
         </div>
         <div class="list__down">
             <div class="list_text">
-                <h4>Ibu:</h4>
-                <p>{{ beer.ibu }} </p>
+                <h4>Ibu: </h4>
+                <p> {{ beer.ibu }} </p>
             </div>
             <div class="list_text">
-                <h4>%Alc:</h4>
-                <p>{{ beer.alc }}</p>
+                <h4>%Alc: </h4>
+                <p> {{ beer.alc }}</p>
+            </div>
+            <div class="list_text">
+                <h4>Color: </h4>
+                <p> {{ beer.color }}</p>
             </div>
         </div>
     </div>
@@ -33,7 +37,8 @@ const props = defineProps({
 .list {
     background: transparent;
     display: flex;
-    min-width: 40%;
+    min-width: 42%;
+    max-width: 50%;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -41,7 +46,7 @@ const props = defineProps({
 .list__up {
     width: 100%;
     display: flex;
-
+    justify-content: space-between;
 
 }
 .list__down{

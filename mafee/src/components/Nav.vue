@@ -64,7 +64,6 @@ ul{
     margin-right: 1rem;
 }
 a{
-    margin-bottom: 0.8rem;
     text-decoration: none;
     color: var(--color-text-ligth); 
 }
@@ -72,6 +71,7 @@ a:hover{
     color: var(--color-btn);
 }
 .nav__container{
+    margin-top: -0.8rem;
     display: flex;
     justify-content: space-between;
 }
@@ -79,10 +79,11 @@ a:hover{
     width: 80%;
     gap: 1rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-top: 2.5rem;
 }
 .nav__logo{
-    width: 8%;
+    width: 9%;
 }
 </style>

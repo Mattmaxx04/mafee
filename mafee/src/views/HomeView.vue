@@ -217,7 +217,7 @@ onMounted(() => {
     max-height: 78vh;
 }
 
-.home__discover__carousel {
+.home__discover__carousel {    
     display: flex;
     margin: 1rem;
     justify-content: center;
@@ -226,7 +226,7 @@ onMounted(() => {
 .home__discover {
     background-image: url(../assets/background-madera.jpg);
     padding: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 /*--------------crafted------------------*/
