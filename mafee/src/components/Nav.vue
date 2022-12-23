@@ -11,7 +11,7 @@ import { RouterLink} from 'vue-router'
             <RouterLink to="/about"> WHAT WE OFFER</RouterLink>
             <RouterLink to="/workwithus"> MEET THE TEAM</RouterLink>
             
-            <img src="" alt="logo" srcset="">
+            <img src="../assets/mafee-logo.png" class="nav__logo" alt="logo" srcset="">
 
             <RouterLink to="/reservation"> RESERVATION </RouterLink>
             <RouterLink to="/contactus"> CONTACT US </RouterLink>
@@ -25,6 +25,7 @@ import { RouterLink} from 'vue-router'
 
 <style scoped>
 a{
+    margin-bottom: 0.8rem;
     text-decoration: none;
     color: var(--color-text-ligth); 
 }
@@ -38,5 +39,9 @@ a:hover{
     gap: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.nav__logo{
+    width: 8%;
 }
 </style>
