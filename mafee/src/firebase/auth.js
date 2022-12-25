@@ -7,6 +7,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import { addUser } from "./users.js";
 import user from "../store/users.js";
 
 const auth = getAuth(app);
@@ -15,6 +16,7 @@ const provider = new GoogleAuthProvider();
 const loginWithGoogle = () => {
   signInWithPopup(auth, provider)
     .then((result) => {
+
       let newUser = {
         displayName: result.user.displayName,
         photoURL: result.user.photoURL,
@@ -24,6 +26,7 @@ const loginWithGoogle = () => {
       user.value = {
         ...newUser,
       };
+      addUser(newUser)
     })
     .catch((error) => {
       console.warn("error", error);

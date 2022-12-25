@@ -2,6 +2,10 @@
 import Signin from '../components/Signin.vue';
 import Login from '../components/Login.vue';
 import Google from '../components/Google.vue';
+import user from '../store/users.js';
+import Profile from '../components/Profile.vue';
+import Location from '../components/Location.vue';
+import CreditCard from '../components/CreditCard.vue';
 </script>
 
 <template>
@@ -9,12 +13,20 @@ import Google from '../components/Google.vue';
     <div class="account__banner">
         <h2 class="centered">My Account</h2>
     </div>
-   
-    <Login v-if="!user"/>
+   <div v-if="!user" class="account__log">
+    <Login />
     
-    <Google v-if="!user"/>
+    <Google />
    
-    <Signin v-if="!user"/>
+    <Signin />
+    </div>
+    <div class="account__settings">
+        <Profile />
+        <Location />
+        <CreditCard />
+    </div>
+
+
 </div>
 </template>
 
@@ -42,4 +54,10 @@ h2{
   transform: translate(-50%, -50%);
 }
 
+.account__log{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 </style>
