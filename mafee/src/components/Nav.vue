@@ -34,8 +34,7 @@ import { RouterLink} from 'vue-router'
     
       
       <ul class="">
-        <li><a class="menu__link" href="#">Sing In</a></li>
-        <li><a class="menu__link" href="#">Log In</a></li>
+        <RouterLink to="/account" > Login </RouterLink>
       </ul>
     
   </div>

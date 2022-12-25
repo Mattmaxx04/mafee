@@ -7,12 +7,12 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import user from "../store/user.js";
+import user from "../store/users.js";
 
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-function loginWithGoogle() {
+const loginWithGoogle = () => {
   signInWithPopup(auth, provider)
     .then((result) => {
       let newUser = {
@@ -36,7 +36,9 @@ function logout() {
       user.value = null;
       localStorage.setItem("user", null);
     })
-    .catch((error) => {});
+    .catch((error) => {
+      console.warn("error", error);
+    });
 }
 
 //Registro de Usuario con Mail y Pass
@@ -69,4 +71,4 @@ function loginWithMail() {
     });
 }
 
-export { loginWithGoogle, logout, register };
+export { loginWithGoogle, logout, register, loginWithMail };
