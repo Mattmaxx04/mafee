@@ -2,10 +2,17 @@
 import Signin from '../components/Signin.vue';
 import Login from '../components/Login.vue';
 import Google from '../components/Google.vue';
-import user from '../store/users.js';
+import user from '../store/user.js';
 import Profile from '../components/Profile.vue';
 import Location from '../components/Location.vue';
 import CreditCard from '../components/CreditCard.vue';
+import { getUsers } from '../firebase/users';
+import { onMounted } from 'vue';
+
+onMounted(()=>{
+    getUsers()
+})
+
 </script>
 
 <template>

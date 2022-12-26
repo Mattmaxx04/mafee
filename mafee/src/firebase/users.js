@@ -1,17 +1,36 @@
 import { app } from './index.js'
 import { collection, addDoc, doc, deleteDoc, onSnapshot, getFirestore } from 'firebase/firestore';
+import users from '../store/users.js'
 /*import { posts } from '../store/PostStore.js';*/
 
+/*conexion a la base de firebase*/
+const db = getFirestore(app);
 
-const db = getFirestore(app)
-const postRef = collection(db, 'users')
+/*beers.value = traerBeers()*/
+const usersRef = collection(db, "users");
+
+const getUsers = () => {
+    onSnapshot(usersRef, (querySnapshot) => {
+        users.value = [];
+      querySnapshot.forEach((doc) => {        
+        const user = {
+          id: doc.id,          
+          displayName: doc.data().displayName,
+          email: doc.data().email,
+          photoURL:  doc.data().photoURL,        
+          
+        };
+        users.value.push(user);
+      });
+    });
+    }
 
 const addUser = (user) => {
-    addDoc(postRef, user)
+    addDoc(usersRef, user)
 }
 
 const updateUser = (user) => {
     // para actualizar datos
 }
 
-export { addUser, updateUser }
+export { addUser, updateUser, getUsers }
