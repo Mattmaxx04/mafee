@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink} from 'vue-router'
+import {logout} from '../firebase/auth.js'
 </script>
 
 <template>
@@ -35,6 +36,7 @@ import { RouterLink} from 'vue-router'
       
       <ul class="">
         <RouterLink to="/account" > Login </RouterLink>
+        <button @click="logout()">Logout</button>
       </ul>
     
   </div>
