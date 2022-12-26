@@ -61,17 +61,66 @@
                 maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
                 corrupti voluptatem similique?</p>
             <div class="author_post">
-                <img src="../assets/blog-author.jpg" alt="">
+                <img src="../assets/blog-author-radius.jpeg" alt="">
                 <div>
                     <h2>JOHN DOE</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio repellat cupiditate aut, vero provident corrupti veritatis voluptatibus rem ducimus accusantium dignissimos, quia aliquam facere pariatur est similique laudantium maxime?</p>
                 </div>
             </div>
+            <h2 class="h4_comments">COMMENTS</h2>
             <div class="comments">
-
+                <img src="../assets/img-profile-comment2.jpeg" alt="">
+                <div>
+                    <h2>JUSTIN BURNS</h2>
+                    <p class="date_comment">February 14, 2022</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="reply">REPLY</p>
+                </div>
             </div>
             <div class="posts">
-
+                <img src="../assets/img-profile-comment1.jpeg" alt="">
+                <div>
+                    <h2>CAROL BARNETT</h2>
+                    <p class="date_comment">February 14, 2022</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="reply">REPLY</p>
+                </div>
+            </div>
+            <div class="location">
+            <div class="tab-content">
+                <div class="tab-pane fade active show" id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <h3 class="mb-4">POST A COMMENT</h3>
+                    <div class="row form-reservation">
+                        <div class="form-floating form-group">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2" class="label-textarea">Comment</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" value="Name*">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" value="Email*">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Save my name, email, and website in this browser for the next time I comment.
+                            </label>
+                        </div>
+                        <div class="account__btns">
+                            <button class="btn btn-dark">SEND</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="bar-right">
@@ -449,5 +498,114 @@
     color: var(--color-text-main);
     padding-top: 1rem;
     text-align: justify;
+}
+
+.comments{
+    display: flex;
+    width: 95%;
+    gap: 2rem;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--color-text-main);
+    /* border-top: 0.2rem solid var(--color-text-main); */
+    padding: 3rem;
+}
+
+.comments img{
+    border-radius: 50%;
+    /* width: 15rem;
+    height: 15rem; */
+}
+
+.comments h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.comments p{
+    font-size: 0.9rem;
+    color: var(--color-text-main);
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.posts{
+    display: flex;
+    width: 95%;
+    gap: 2rem;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--color-text-main);
+    /* border-top: 0.2rem solid var(--color-text-main); */
+    padding: 3rem;
+}
+
+.posts img{
+    border-radius: 50%;
+    /* width: 15rem;
+    height: 15rem; */
+}
+
+.posts h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.posts p{
+    font-size: 0.9rem;
+    color: var(--color-text-main);
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.h4_comments{
+    padding: 2rem 0rem 0rem 3rem;
+    font-weight: bold;
+}
+
+.date_comment{
+    color: var(--color-btn) !important;
+    padding-top: 0rem !important;
+    font-size: 0.7rem !important;
+}
+
+.reply{
+    color: var(--color-btn) !important;
+    padding-top: 1rem !important;
+    font-size: 0.9rem !important;
+    text-align: end !important;
+    font-weight: bold;
+}
+
+.account__btns{
+    margin: 0.5rem;
+}
+
+.form-group{
+  padding: 1rem;
+}
+
+.label-textarea{
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.location{
+    width: 95%;
+    font-weight: bold;
+}
+
+.tab-content{
+    padding-top: 3rem;
+}
+
+.tab-content h3{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.form-check{
+    padding: 2rem 0rem 2rem 3rem;
 }
 </style>
