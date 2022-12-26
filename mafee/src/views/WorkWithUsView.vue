@@ -7,12 +7,12 @@
     <div class="home__discover text-center">
         <h2>MEET THE TEAM</h2>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="team__img">
         <img class="img__team" src="../assets/Home-4-img-gallery-1.jpg" alt="">
         <img class="img__team" src="../assets/Home-4-img-gallery-2.jpg" alt="">
         <img class="img__team" src="../assets/Home-4-img-gallery-3.jpg" alt="">
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="team__img">
         <img class="img__team" src="../assets/Home-4-img-gallery-4.jpg" alt="">
         <img class="img__team" src="../assets/Home-4-img-gallery-5.jpg" alt="">
         <img class="img__team" src="../assets/Home-4-img-gallery-6.jpg" alt="">
@@ -59,22 +59,22 @@
         </div>
     </div>
     <div class="the__team">
-        <div class="p-3 text-center">
+        <div class="p-3 text-center us">
             <img src="../assets/team_Mati.jpeg" alt="">
             <h3>Matías Quiroga</h3>
             <h5>Co-Founder & Head Brewer</h5>
         </div>
-        <div class="p-3 text-center">
+        <div class="p-3 text-center us">
             <img src="../assets/team-Eze.jpeg" alt="">
             <h3>Ezequiel Gómez</h3>
             <h5>Co-Founder & Chief Beer Taster</h5>
         </div>
-        <div class="p-3 text-center">
+        <div class="p-3 text-center us">
             <img src="../assets/team-Lei.jpg" alt="">
             <h3>Natasha Leila Acuña</h3>
             <h5>Lab and Quality Assurance Manager</h5>
         </div>
-        <div class="p-3 text-center">
+        <div class="p-3 text-center us">
             <img src="../assets/team-Marcos.jpg" alt="">
             <h3>Marcos Fabián</h3>
             <h5>Co-Founder & Director of Marketing</h5>
@@ -135,7 +135,10 @@
     background-image: url("../assets/Team-title-img.jpg");
     height: 35vh;
 }
-
+.team__img{
+    justify-content: space-around;
+   display: flex;
+}
 .home__discover h2{
     color: white;
 }
@@ -150,9 +153,9 @@
     margin-bottom: 1rem;
 }
 
-.img__team {
-    padding: 1.5rem;
-    width: 39rem;
+.img__team {   
+    padding: 1rem;
+    width: 30%;
 }
 
 .the__process{
@@ -185,7 +188,7 @@
     background-position: 0% -13%;
     background-size:cover;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 48vh;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -218,6 +221,9 @@ p {
     color: var(--color-text-main);
 }
 
+.us{
+    width: 40%;
+}
 /* progress bar */
 .progress {
     height: 0.5rem;

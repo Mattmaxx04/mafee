@@ -222,8 +222,6 @@ const beerFilter = () => {
     background-image: url('../assets/Menu-page-background-img-4.jpg');
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 4rem;
     margin: 2.5rem;
 }
