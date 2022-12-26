@@ -3,7 +3,7 @@ import {
     getFirestore,
     collection,
     onSnapshot, 
-    addDoc
+    addDoc, setDoc
   } from "firebase/firestore";
 import locations from '../store/location.js'
 
@@ -13,6 +13,10 @@ import locations from '../store/location.js'
   const addLocation= (location)=>{
     addDoc(locationRef, location)
 };
+
+const updateLocation=(location)=>{
+  setDoc(locationRef,location)
+}
 
 const getLocation = () =>{
     onSnapshot(locationRef, (querySnapshot) => {
@@ -34,4 +38,4 @@ const getLocation = () =>{
     });
     }
 
-    export {  getLocation, addLocation };
+    export {  getLocation, addLocation, updateLocation };

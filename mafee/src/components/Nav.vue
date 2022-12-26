@@ -13,7 +13,7 @@ import {logout} from '../firebase/auth.js'
             <RouterLink to="/workwithus"> MEET THE TEAM</RouterLink>
             
             <img src="../assets/mafee-logo.png" class="nav__logo" alt="logo" srcset="">
-
+       
             <RouterLink to="/reservation"> RESERVATION </RouterLink>
             <RouterLink to="/contactus"> CONTACT US </RouterLink>
             <RouterLink to="/blogmain"> BLOG </RouterLink>

@@ -314,7 +314,7 @@ onMounted(() => {
     display: flex;
     flex-wrap: wrap;
     margin: 4rem;
-
+    justify-content: space-between;
 
 }
 

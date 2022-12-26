@@ -1,33 +1,19 @@
 <script setup>
-import { ref, computed } from 'vue';
 
 
 const props = defineProps({
     user:{},
 })
 
-console.log(props.user);
-
-/*
-getUsers()
-
-const userWithEmail = ref({})
-
-
-const updateUser = computed(()=>{
-    userWithEmail.value = users.value.filter(user => user.email === user.value.email)
-})*/
 </script>
 
 <template>
     
-    {{updateUser}}
     <div class="profile">
         <div class="tab-content p-4 p-md-5" >
             <div class="tab-pane fade active show" id="account" role="tabpanel" aria-labelledby="account-tab">
                 <h3 class="mb-4">Account Settings</h3>
                 <div class="row">
-<p>{{user.displayName}}</p>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Full Name</label>

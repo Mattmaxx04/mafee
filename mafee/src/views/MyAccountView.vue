@@ -39,9 +39,9 @@ onMounted(()=>{
     </div>
     <div v-if="user" class="account__settings">
         
-     <Profile :user="user"/>
-        <Location />
-        <CreditCard />
+        <Profile :user="user" />
+        <Location :user="user" />
+        <CreditCard :user="user" />
     </div>
 
 

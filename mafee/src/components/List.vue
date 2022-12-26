@@ -34,6 +34,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
+
 .list {
     background: transparent;
     display: flex;
