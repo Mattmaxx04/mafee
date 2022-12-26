@@ -126,13 +126,14 @@
 <style scoped>
 .home__discover {
     padding: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("../assets/Team-title-img.jpg");
     height: 35vh;
-    margin: 2.5rem;
 }
 
 .home__discover h2{
