@@ -91,7 +91,7 @@
                     neque! Quam, consequatur?</p>
             </div>
             <div class="meet__progress">
-                <div>
+                <div class="progress__elements">
                     <div class="d-flex justify-content-between">
                         <h6> BREWERY PROCESS</h6>
                         <h6>93%</h6>
@@ -126,13 +126,14 @@
 <style scoped>
 .home__discover {
     padding: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("../assets/Team-title-img.jpg");
     height: 35vh;
-    margin: 2.5rem;
 }
 
 .home__discover h2{
@@ -181,6 +182,10 @@
 
 .meet__skills {
     background-image: url('../assets/background-color.jpg');
+    background-position: 0% -13%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 40vh;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -188,13 +193,21 @@
 
 .skills {
     width: 35vw;
+    margin-top: 6rem;
 }
 
 .meet__progress {
     background-image: url('../assets/background-icon-1.png');
     background-position: center;
+    background-size: 50rem;
+    background-repeat: no-repeat;
     width: 35vw;
     padding: 2rem;
+}
+
+.progress__elements{
+    margin-top: 5rem;
+
 }
 
 h6 {
