@@ -4,12 +4,12 @@ import {loginWithMail} from '../firebase/auth.js'
 
 <template>
 
-    <form action="" class="login__form">
+    <form @submit.prevent="loginWithMail(this.email, this.password)" action="" class="login__form">
         <h3>Login</h3>
         <label for="">Email address *</label>
-        <input type="text">
+        <input v-model="email" type="text">
         <label for="">Password</label>
-        <input type="text">
+        <input v-model="password" type="text">
         <button type="submit" @click="loginWithMail">Login</button>
         <a href="">Lost your password?</a>
     </form>

@@ -20,7 +20,7 @@ import CreditCard from '../components/CreditCard.vue';
    
     <Signin />
     </div>
-    <div class="account__settings">
+    <div v-if="user" class="account__settings">
         <Profile />
         <Location />
         <CreditCard />

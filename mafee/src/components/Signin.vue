@@ -4,12 +4,12 @@ import {register} from '../firebase/auth.js'
 
 <template>
      
-<form action="" class="signin__form">
+<form @submit.prevent="register(this.email, this.password)" action="" class="signin__form">
     <h3>Signin</h3>
     <label for="">Email address *</label>
-    <input type="text">
+    <input v-model="email" type="text">
     <label for="">Password *</label>
-    <input type="text">    
+    <input v-model="password" type="text">    
     <button type="submit" @click="register">Sign in</button>
 </form>
 
