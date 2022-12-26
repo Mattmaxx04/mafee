@@ -20,7 +20,8 @@ const getBeers = () =>{
           info:doc.data().info, 
           alc:doc.data().alc,
           ibu:doc.data().ibu,
-          color:doc.data().color
+          color:doc.data().color,
+          stock:doc.data().stock
         };
     
         beers.value.push(beer);

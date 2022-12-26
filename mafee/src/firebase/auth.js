@@ -17,7 +17,7 @@ import { addCredit } from "./credit.js";
 const userWithEmail = ref({})
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-
+//login con google
 const loginWithGoogle = () => {
   signInWithPopup(auth, provider)
     .then((result) => {      
@@ -25,10 +25,9 @@ const loginWithGoogle = () => {
       const email = result.user.email 
       const userSome = userList.value.some(user => user.email === email )
       if (userSome === true){
-      userWithEmail.value = userList.value.filter(user => user.email === result.user.email)
-      console.log(userWithEmail);
+      userWithEmail.value = userList.value.filter(user => user.email === result.user.email)      
       user.value = 
-        userWithEmail;
+        userWithEmail.value[0];
       }else{
       let newUser = {
         displayName: result.user.displayName,
@@ -54,7 +53,7 @@ const loginWithGoogle = () => {
     }
       localStorage.setItem("user", JSON.stringify(newUser));
       user.value = {
-        ...newUser,
+        ...newUser
       };
 
       addLocation(newLocation)
@@ -67,6 +66,7 @@ const loginWithGoogle = () => {
     });
 }
 
+//logout
 function logout() {
   signOut(auth)
     .then(() => {
@@ -85,7 +85,6 @@ function register() {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      console.log(user);
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -107,5 +106,6 @@ function loginWithMail() {
       const errorMessage = error.message;
     });
 }
+
 
 export { loginWithGoogle, logout, register, loginWithMail };

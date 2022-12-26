@@ -2,16 +2,26 @@
 import Signin from '../components/Signin.vue';
 import Login from '../components/Login.vue';
 import Google from '../components/Google.vue';
-import user from '../store/user.js';
 import Profile from '../components/Profile.vue';
 import Location from '../components/Location.vue';
 import CreditCard from '../components/CreditCard.vue';
-import { getUsers } from '../firebase/users';
-import { onMounted } from 'vue';
 
+import { onMounted, ref, computed } from 'vue';
+
+import { getUsers } from '../firebase/users';
+import { getCredit } from '../firebase/credit.js'
+import { getLocation } from '../firebase/location.js' 
+
+import credits  from '../store/credit.js'
+import  location from '../store/location.js'
+import user from '../store/user.js';
+import users from '../store/users.js';
 onMounted(()=>{
-    getUsers()
+    getUsers(),
+    getCredit(),
+    getLocation()
 })
+
 
 </script>
 
@@ -28,7 +38,8 @@ onMounted(()=>{
     <Signin />
     </div>
     <div v-if="user" class="account__settings">
-        <Profile />
+        
+     <Profile :user="user"/>
         <Location />
         <CreditCard />
     </div>

@@ -18,7 +18,7 @@ const getUsers = () => {
           displayName: doc.data().displayName,
           email: doc.data().email,
           photoURL:  doc.data().photoURL,        
-          
+          password: doc.data().password,
         };
         users.value.push(user);
       });
