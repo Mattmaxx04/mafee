@@ -144,7 +144,7 @@ onMounted(() => {
                 <h3>OUR BEER CULTURE</h3>
                 <p class="culture__content__p">If there is something that defines us Argentines, it is our beer culture. So don't hesitate and be part of this great community, joining us and keeping up to date with each of the news that this great world of beer offers. Register if you are not yet part of this community or, if you do, log in to be able to participate actively.</p>
                 <button class="btn__more">
-                    <p> SIGN UP </p>
+                    <RouterLink to="/account"> <p> SIGN UP </p> </RouterLink>
                 </button>
             </div>
         </div>
@@ -166,9 +166,7 @@ onMounted(() => {
                     <img src="../assets/Blog-standard-img-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">SUMMIT BREWERY</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">At the brewery summit, we have the opportunity to meet both craft and non-craft breweries, to share a day between beers and show our products.</p>
                         <a href="#" class="btn__card">READ MORE</a>
                     </div>
                 </div>
@@ -176,9 +174,7 @@ onMounted(() => {
                     <img src="../assets/Blog-standard-img-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">CRAFT BEERS BARS</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">A new craft beer bar was inaugurated in one of the most visited places near the Faculty. Because you have to take a little time to share a delicious beer.</p>
                         <a href="#" class="btn__card">READ MORE</a>
                     </div>
                 </div>
@@ -186,9 +182,7 @@ onMounted(() => {
                     <img src="../assets/Blog-standard-img-4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">BEER DAY</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
+                        <p class="card-text">The long-awaited day finally arrived and I say this because you know that on the day of beer, beer is given as a gift to all good brewers. So join, don't hesitate.</p>
                         <a href="" class="btn__card">READ MORE</a>
                     </div>
                 </div>
