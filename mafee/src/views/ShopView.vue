@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { beers } from '../store/beers.js'
 import { getBeers } from '../firebase/beers.js';
 import { onMounted } from 'vue';
-import Card from '../components/Card.vue';
+import Card from '../components/CardShop.vue';
 import List from '../components/List.vue';
 
 onMounted(() => {
@@ -27,9 +27,8 @@ const beerFilter = () => {
     } else {
         beerB.value = filter1;
     }
-
-
 }
+
 </script>
 
 <template>
