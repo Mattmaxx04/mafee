@@ -1,5 +1,6 @@
 <script setup>
 
+
 </script>
 
 <template>
@@ -17,11 +18,13 @@
             <p> VIEW MORE </p>
         </button>
     </div>
+
     <div class="d-flex container_main">
         <div class="blog">
             <div class="blog_topic2">
                 <h2>chain of thoughts</h2>
             </div>
+           
             <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
                 ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
                 Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
@@ -29,9 +32,11 @@
                 corrupti voluptatem similique?
                 Assumenda sit in facere quia repudiandae, sed ab nihil voluptates unde, rerum accusantium laboriosam sint laborum.
                 Dolorem, impedit vero harum rerum eaque voluptatem repellat? Nostrum voluptatibus totam numquam laborum quod!</p>
-            <p class="text-blog-special">
+           
+                <p class="text-blog-special">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque eveniet neque esse, illum nihil dicta unde accusamus sed totam ea quod est consequuntur distinctio recusandae, magni quibusdam? Est, labore!
             </p>
+           
             <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
                 ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
                 Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
@@ -44,22 +49,26 @@
                 Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
                 maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
                 corrupti voluptatem similique?</p>
+               
                 <div class="imgs">
                     <img src="../assets/blog-single-img-1.jpg" class="img1" alt="">
                     <img src="../assets/blog-single-img-2.jpg" class="img2" alt="">
                 </div>
-            <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+           
+                <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
                 ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
                 Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
                 maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
                 corrupti voluptatem similique?
                 Assumenda sit in facere quia repudiandae, sed ab nihil voluptates unde, rerum accusantium laboriosam sint laborum.
                 Dolorem, impedit vero harum rerum eaque voluptatem repellat? Nostrum voluptatibus totam numquam laborum quod!</p>
-            <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+            
+                <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
                 ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
                 Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
                 maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
                 corrupti voluptatem similique?</p>
+
             <div class="author_post">
                 <img src="../assets/blog-author-radius.jpeg" alt="">
                 <div>
@@ -67,6 +76,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio repellat cupiditate aut, vero provident corrupti veritatis voluptatibus rem ducimus accusantium dignissimos, quia aliquam facere pariatur est similique laudantium maxime?</p>
                 </div>
             </div>
+
             <h2 class="h4_comments">COMMENTS</h2>
             <div class="comments">
                 <img src="../assets/img-profile-comment2.jpeg" alt="">

@@ -33,11 +33,10 @@ import {logout} from '../firebase/auth.js'
      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad provident a non eaque maiores?</p>
     </div>
     
-      
-      <ul class="">
-        <RouterLink to="/account" > Login </RouterLink>
-        <button @click="logout()">Logout</button>
-      </ul>
+        <RouterLink v-if="!user" to="/account" class="btn__login"> Login </RouterLink>
+        <div v-if="user">
+        <button   @click="logout()">Logout</button>
+    </div>
     
   </div>
 </div>
@@ -45,6 +44,12 @@ import {logout} from '../firebase/auth.js'
 </template>
 
 <style scoped>
+.btn__login{
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem;
+    background: var(--color-btn);
+}
 .menu__link{
     font-size: 1.5rem;
 }
@@ -52,9 +57,7 @@ import {logout} from '../firebase/auth.js'
     margin: 1rem;
 
 }
-ul{
-    list-style-type: none;
-}
+
 .where{
     margin-left: 1rem;
     margin-top: 2rem;
