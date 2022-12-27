@@ -16,17 +16,17 @@ const getCart= ()=>{
       querySnapshot.forEach((doc) => {
         const newCart ={
           id: doc.id,
-          product: doc.data().product,
+          beerId: doc.data().beerId,
+          date: doc.data().date,
+          type: doc.data().type,
           userId: doc.data().userId,
-          content: doc.data().content,
-          image: doc.data().image,
+          img: doc.data().img,
           quantity: doc.data().quantity,
-          date: doc.data().date
+          price: doc.data().price
         }
         cart.value.push(newCart)
         cart.value.sort((a,b)=> b.date - a.date)
       });
-      console.log(cart.value);
     });
     }
 
