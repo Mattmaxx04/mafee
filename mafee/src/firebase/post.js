@@ -25,6 +25,14 @@ const getPost = () => {
         author: doc.data().author,
         topic: doc.data().topic,
         type:doc.data().type,
+        p2:doc.data().p2,
+        p3:doc.data().p3,
+        p4:doc.data().p4,
+        p5:doc.data().p5,
+        p6:doc.data().p6,
+        extra:doc.data().extra,
+        extra2:doc.data().extra2,
+        author_img:doc.data().author_img
       };
 
       posts.value.push(newPost);

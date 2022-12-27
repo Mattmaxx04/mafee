@@ -1,33 +1,42 @@
 import { app } from "./index.js";
-import { getFirestore, onSnapshot, collection, query, getDoc, addDoc, where, deleteDoc } from "firebase/firestore";
-import {beers} from "../store/beers.js"
+import {
+  getFirestore,
+  onSnapshot,
+  collection,
+  query,
+  getDoc,
+  addDoc,
+  where,
+  deleteDoc,
+} from "firebase/firestore";
+import comment from "../store/comments.js";
+
 /*conexion a la base de firebase*/
 const db = getFirestore(app);
 
 /*beers.value = traerBeers()*/
-const beersRef = collection(db, "beers");
+const commentRef = collection(db, "comments");
 
-const getBeers = () =>{
-    onSnapshot(beersRef, (querySnapshot) => {
-        beers.value = [];
-      querySnapshot.forEach((doc) => {
-        
-        const beer = {
-          id: doc.id,          
-          type: doc.data().type,
-          img: doc.data().img, 
-          price:  doc.data().price,         
-          info:doc.data().info, 
-          alc:doc.data().alc,
-          ibu:doc.data().ibu,
-          color:doc.data().color,
-          stock:doc.data().stock
-        };
-    
-        beers.value.push(beer);
-        beers.value.sort((a,b)=>b.date - a.date)
-      });
+const addComment = (comment) => {
+  addDoc(collection(db, "comments"), comment);
+};
+const getComments = () => {
+  onSnapshot(commentRef, (querySnapshot) => {
+    comment.value = [];
+    querySnapshot.forEach((doc) => {
+      const newComment = {
+        id: doc.id,
+        date: doc.data().date,
+        postid: doc.data().postid,
+        body: doc.data().body,
+        username: doc.data().username,
+        photo: doc.data().photo,
+      };
+
+      comment.value.push(newComment);
+      /*comment.value.sort((a,b)=>b.date - a.date)*/
     });
-    }
+  });
+};
 
-    export {  getBeers };
+export { getComments, addComment };
