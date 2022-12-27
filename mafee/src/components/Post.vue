@@ -1,28 +1,52 @@
 <script setup>
-import { RouterLink} from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 const props = defineProps({
     post: {},
     typeof: Object
 })
 
-console.log(props.post);
 </script>
 
 <template>
 
-    <div v-if="post.type === 'post' ">
-        <RouterLink  to="/blogtopic" :postid="post.id"> 
-        <div class="blog_img" :style="{ 'background-image': 'url('+post.img+' )'}">
+    <div v-if="post.type === 'post'">
+        <RouterLink :to="{path: '/blogtopic', query: { postid: post.id}}">
             
-            <p class="date_name">{{ post.month }}</p>
-            <p class="date_number">{{ post.day }}</p>
-        </div>
+            <div class="blog_img" :style="{ 'background-image': 'url(' + post.img + ' )' }">
+                {{ post.id }}
+                <p class="date_name">{{ post.month }}</p>
+                <p class="date_number">{{ post.day }}</p>
+            </div>
 
-        <div class="blog-title">
-            <h2>{{ post.title }}</h2>
-            <p class="author">{{ post.author }}</p>
-            <div class="social">
+            <div class="blog-title">
+                <h2>{{ post.title }}</h2>
+                <p class="author">{{ post.author }}</p>
+                <!--<p class="text-blog">{{post.text}}</p>-->
+                <div class="social">
+                    <div class="social1">
+
+                        <p>{{ post.topic }}</p>
+                    </div>
+                    <div class="social2">
+                        <p>Share:</p>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </RouterLink>
+    </div>
+
+
+
+    <div v-if="post.type === 'news'" class="blog_topic">
+        <RouterLink :to="{path: '/blogtopic', query: { postid: post.id}}">
+            <h2 class="black">{{ post.title }}</h2>
+            <p class="black">{{ post.subtitle }}</p>
+            <div class="social3">
                 <div class="social1">
                     <p>{{ post.topic }}</p>
                 </div>
@@ -34,35 +58,12 @@ console.log(props.post);
                     <i class="bi bi-linkedin"></i>
                 </div>
             </div>
-        </div>
-    </RouterLink>
+        </RouterLink>
     </div>
 
+   
 
-    
-            <div v-if=" post.type  === 'news' " class="blog_topic">
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, totam distinctio ullam dolorum quisquam ut deserunt animi nam laboriosam.</h2>
-                <p>BREWERY PROCESS</p>
-                <div class="social3">
-                        <div class="social1">
-                            <p>Music, photo</p>
-                        </div>
-                        <div class="social2">
-                            <p>Share:</p>
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-twitter"></i>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-linkedin"></i>
-                        </div>
-                    </div>
-            </div>
 
-    
-    
-            <div class="blog_topic2">
-                <RouterLink to="/blogtopic"> <h2>chain of thoughts</h2> </RouterLink>
-            </div>
-        
     <!-- <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -99,24 +100,30 @@ console.log(props.post);
 </template>
 
 <style scoped>
-a{
+.black {
+    color: rgb(39, 32, 32);
+}
+
+a {
     text-decoration: none;
 }
 
-.blog_img2{
-    
+
+.blog_img2 {
+
     width: 95%;
     height: 30rem;
     background-size: cover;
     background-position: center;
 }
 
-.blog_img3{
+.blog_img3 {
     width: 95%;
     height: 30rem;
     background-size: cover;
     background-position: center;
 }
+
 .blog_img {
     width: 95%;
     height: 30rem;
@@ -181,6 +188,7 @@ a{
     justify-content: end;
     width: 50%;
     gap: 2rem;
+    
 }
 
 .social1 {
@@ -188,16 +196,17 @@ a{
 }
 
 
-.blog_topic{
+.blog_topic {
     display: flex;
     flex-direction: column;
     background-image: url(../assets/background-color.jpg);
     width: 95%;
     padding: 2rem 2rem 0.5rem 2rem;
     margin-bottom: 3rem;
+    border-bottom: 0.1rem solid var(--color-btn);
 }
 
-.social3{
+.social3 {
     display: flex;
     justify-content: space-between;
     font-size: 0.7rem;
@@ -208,18 +217,18 @@ a{
     padding-top: 2rem;
 }
 
-.blog_topic h2{
+.blog_topic h2 {
     padding-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.blog_topic p{
+.blog_topic p {
     text-align: center;
 }
 
-.blog_topic2{
+.blog_topic2 {
     background-image: url(../assets/background-color.jpg);
     width: 95%;
     padding: 4rem;
@@ -230,7 +239,7 @@ a{
     text-decoration: none;
 }
 
-.blog_topic2 a{
+.blog_topic2 a {
     text-decoration: none;
     color: black;
 }

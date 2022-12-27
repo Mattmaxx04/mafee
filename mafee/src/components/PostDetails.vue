@@ -1,5 +1,4 @@
 <script setup>
-import { RouterLink} from 'vue-router'
 
 const props = defineProps({
     post: {},
@@ -10,8 +9,7 @@ const props = defineProps({
 
 <template>
 
-    <div>
-        <RouterLink to="/blogtopic" :postid="post.id"> 
+    <div v-if="post.type === 'post'">
         <div class="blog_img" :style="{ 'background-image': 'url('+post.img+' )'}">
             
             <p class="date_name">{{ post.month }}</p>
@@ -35,9 +33,129 @@ const props = defineProps({
                 </div>
             </div>
         </div>
-    </RouterLink>
     </div>
 
+
+
+
+
+
+
+    
+       <div v-if="post.type === 'news'" class="blog">
+            <div class="blog_topic2">
+                <h2>{{post.title}}</h2>
+            </div>
+           
+            <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+                ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
+                Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
+                maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
+                corrupti voluptatem similique?
+                Assumenda sit in facere quia repudiandae, sed ab nihil voluptates unde, rerum accusantium laboriosam sint laborum.
+                Dolorem, impedit vero harum rerum eaque voluptatem repellat? Nostrum voluptatibus totam numquam laborum quod!</p>
+           
+                <p class="text-blog-special">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque eveniet neque esse, illum nihil dicta unde accusamus sed totam ea quod est consequuntur distinctio recusandae, magni quibusdam? Est, labore!
+            </p>
+           
+            <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+                ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
+                Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
+                maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
+                corrupti voluptatem similique?
+                Assumenda sit in facere quia repudiandae, sed ab nihil voluptates unde, rerum accusantium laboriosam sint laborum.
+                Dolorem, impedit vero harum rerum eaque voluptatem repellat? Nostrum voluptatibus totam numquam laborum quod!</p>
+            <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+                ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
+                Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
+                maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
+                corrupti voluptatem similique?</p>
+               
+                <div class="imgs">
+                    <img src="../assets/blog-single-img-1.jpg" class="img1" alt="">
+                    <img src="../assets/blog-single-img-2.jpg" class="img2" alt="">
+                </div>
+           
+                <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+                ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
+                Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
+                maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
+                corrupti voluptatem similique?
+                Assumenda sit in facere quia repudiandae, sed ab nihil voluptates unde, rerum accusantium laboriosam sint laborum.
+                Dolorem, impedit vero harum rerum eaque voluptatem repellat? Nostrum voluptatibus totam numquam laborum quod!</p>
+            
+                <p class="text-blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas dolor ea enim qui itaque
+                ad, reiciendis nostrum reprehenderit dolores suscipit vitae ipsam eos a molestias sapiente amet minus totam.
+                Maxime accusantium optio similique. Ut tenetur corrupti, excepturi nisi maxime iusto, similique reprehenderit
+                maiores, dolor provident optio amet? Accusantium alias tenetur architecto voluptatem, delectus ipsum quibusdam! Aut
+                corrupti voluptatem similique?</p>
+
+            <div class="author_post">
+                <img src="../assets/blog-author-radius.jpeg" alt="">
+                <div>
+                    <h2>JOHN DOE</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio repellat cupiditate aut, vero provident corrupti veritatis voluptatibus rem ducimus accusantium dignissimos, quia aliquam facere pariatur est similique laudantium maxime?</p>
+                </div>
+            </div>
+
+            <h2 class="h4_comments">COMMENTS</h2>
+            <div class="comments">
+                <img src="../assets/img-profile-comment2.jpeg" alt="">
+                <div>
+                    <h2>JUSTIN BURNS</h2>
+                    <p class="date_comment">February 14, 2022</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="reply">REPLY</p>
+                </div>
+            </div>
+            <div class="posts">
+                <img src="../assets/img-profile-comment1.jpeg" alt="">
+                <div>
+                    <h2>CAROL BARNETT</h2>
+                    <p class="date_comment">February 14, 2022</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="reply">REPLY</p>
+                </div>
+            </div>
+            <div class="location">
+            <div class="tab-content">
+                <div class="tab-pane fade active show" id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <h3 class="mb-4">POST A COMMENT</h3>
+                    <div class="row form-reservation">
+                        <div class="form-floating form-group">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2" class="label-textarea">Comment</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" value="Name*">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" value="Email*">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Save my name, email, and website in this browser for the next time I comment.
+                            </label>
+                        </div>
+                        <div class="account__btns">
+                            <button class="btn btn-dark">SEND</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        -->
 
 
     <!--

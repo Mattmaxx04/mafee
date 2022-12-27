@@ -23,6 +23,10 @@ const router = createRouter({
     {
       path: "/blogtopic",
       name: "blogtopic",
+      props: true,
+      props(route) {
+        return {  postid: route.query.postid }
+      },
       component: () => import("../views/BlogTopicView.vue"),
     },
     {

@@ -20,6 +20,7 @@ const getPost = () => {
         month: doc.data().month,
         day: doc.data().day,
         title: doc.data().title,
+        subtitle:doc.data().subtitle,
         text: doc.data().text,
         author: doc.data().author,
         topic: doc.data().topic,
