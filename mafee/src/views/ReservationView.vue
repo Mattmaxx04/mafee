@@ -18,37 +18,37 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control" value="Name*">
+                            <input type="text" class="form-control" value="E. Gomez">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="text" class="form-control" value="Phone*">
+                            <input type="text" class="form-control" value="12345678">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>City</label>
-                            <input type="text" class="form-control" value="City*">
+                            <input type="text" class="form-control" value="S. M. de Tuc">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>State</label>
-                            <input type="text" class="form-control" value="State*">
+                            <input type="text" class="form-control" value="Argentina">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Address</label>
-                            <input type="text" class="form-control" value="Address*">
+                            <input type="text" class="form-control" value="Moreno 1400">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="text" class="form-control" value="Email*">
+                            <input type="text" class="form-control" value="juanezequielgomez95@gmail.com">
                         </div>
                     </div>
                     <div class="form-floating form-group">

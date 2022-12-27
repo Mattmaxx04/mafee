@@ -50,12 +50,30 @@ const props = defineProps({
     justify-content: space-between;
 
 }
+
+.list__up h3{
+    font-weight: bold;
+
+}
+
 .list__down{
     display: flex;
     gap: 1rem;
 }
 .list_text{
     display: flex;
+}
+
+.list_text h4{
+    font-size: 1.3rem;
+    padding-right: 0.5rem;
+    font-style: italic;
+}
+
+.list_text p{
+    font-size: 1.1rem;
+    color: var(--color-btn);
+    font-weight: bold;
 }
 
 hr {

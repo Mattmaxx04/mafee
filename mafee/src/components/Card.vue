@@ -19,10 +19,26 @@ const props = defineProps({
     display: flex;
     flex-direction: column;
     flex: 25%;
+    position: relative;
 }
 
 .img__beer{
     width: 100%;
+}
+
+h6{
+    color: transparent;
+    position: absolute;
+}
+
+h6:hover{
+    background-color: var(--color-btn);
+    padding: 1rem 5rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.8;
+    font-size: 3rem;
 }
 
 </style>

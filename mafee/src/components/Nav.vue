@@ -61,6 +61,7 @@ import {logout} from '../firebase/auth.js'
 .where{
     margin-left: 1rem;
     margin-top: 2rem;
+    font-weight: bold;
 }
 .btn__menu{
     color: aliceblue;
@@ -81,12 +82,18 @@ a:hover{
 }
 .nav__links{
     width: 80%;
-    gap: 1rem;
+    gap: 1.5rem;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     margin-top: 2.5rem;
+    font-size: 1rem;
 }
+
+.nav__links a{
+    font-weight: bold;
+}
+
 .nav__logo{
     width: 9%;
 }

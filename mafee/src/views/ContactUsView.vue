@@ -22,13 +22,13 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" class="form-control" value="Name*">
+                            <input type="text" class="form-control" value="Ezequiel Gomez">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="text" class="form-control" value="Email*">
+                            <input type="text" class="form-control" value="juanezequielgomez95@gmail.com">
                         </div>
                     </div>
                     <div class="account__btns">
