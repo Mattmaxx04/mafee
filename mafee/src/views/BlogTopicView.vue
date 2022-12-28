@@ -35,7 +35,7 @@ const updatePost = computed(()=>{
     </div>
     <div class="home__discover">
         <h1>
-            BEERS FAN WELCOME
+            BEER FANS KEEP UP THE FUN
         </h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus voluptate qui debitis. Rem nemo reiciendis similique dignissimos voluptatem harum delectus! Fugiat quia similique vel ipsum architecto reiciendis. Tempore, distinctio.
@@ -163,7 +163,7 @@ const updatePost = computed(()=>{
     background-position: center;
     background-size: cover;
     padding: 10rem;
-    height: 50rem;
+    height: 30rem;
     /* margin-top: 3rem; */
     margin: 5rem 5rem 5rem 5rem;
     display: flex;
@@ -177,6 +177,11 @@ const updatePost = computed(()=>{
 
 .home__discover img{
     width: 15rem;
+}
+
+.home__discover h1{
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 /*--------------blog------------------*/
