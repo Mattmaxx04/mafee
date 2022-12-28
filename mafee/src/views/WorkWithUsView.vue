@@ -63,7 +63,61 @@
             <h3>Marcos Fabián</h3>
             <h5>Co-Founder & Director of Marketing</h5>
         </div>
-
+    </div>
+    <div class="title2">
+        <h2 class="text-center">WORK WITH US</h2>
+    </div>
+    <div class="form-decoration form-img">
+    
+        <form action="">
+            <div class="textbox">
+                <input type="text" name="nameSurname" id="" required>
+                <label>Name and surname</label>
+            </div>
+    
+            <div class="textbox">
+                <input type="mail" name="mail" id="" required>
+                <label>E-mail</label>
+            </div>
+            <div class="textbox">
+                <input type="text" name="phone" id="" required>
+                <label>Phone</label>
+            </div>
+    
+            <div class="textbox">
+                <input type="text" name="age" id="" required>
+                <label>Age</label>
+            </div>
+    
+            <div class="textbox">
+                <input type="text" name="currentResidence" id="" required>
+                <label>Address</label>
+            </div>
+    
+            <div class="textbox">
+                <input type="text" name="in" id="in" required>
+                <label>City</label>
+            </div>
+    
+            <div class="textbox">
+                <input type="text" name="in" id="in" required>
+                <label>State</label>
+            </div>
+            <div class="form-floating form-group textbox">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2" class="label-textarea">Notes</label>
+            </div>
+            <div class="textbox2">
+                <input type="file" name="file" id="" required>
+                <label>Upload CV</label>
+            </div>
+    
+            <button class="btn__more2" type="submit">
+                <p>SEND</p>
+            </button>
+        </form>
+        <img src="../assets/home-masonry-13.png" alt="" class="img-faq">
     </div>
     <div class="skills_container">
         <div class="meet__skills">
@@ -142,6 +196,32 @@
     font-weight: bold;
     font-size: 2.2rem;
     color: var(--color-btn);
+}
+
+.btn__more2 {
+    background: none;
+    border: 2px black solid;
+    padding: 0.5rem;
+}
+
+.btn__more2 p {
+    background: var(--color-btn);
+    font-weight: bold !important;
+    text-align: center;
+    color: var(--color-text-dark);
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 !important;
+    font-size: 1rem !important;
+}
+
+.btn__more2:hover {
+    border: 4px var(--color-btn) solid;
+}
+
+.btn__more2 p:hover {
+    background: black;
+    color: var(--color-btn);
+    border: 4px solid var(--color-btn);
 }
 
 .home__discover h2{
@@ -279,4 +359,122 @@
     transition: width 0.25s;
     border-radius: 5px;
 }
+
+/*---------------FORM-----------------*/
+
+.form-decoration{
+  display: flex;
+  justify-content:center;
+  /* width: 80%; */
+  gap: 3rem;
+  align-items: center;
+  margin: 3rem;
+}
+
+.form-group{
+  margin-top: 1rem;
+  border-bottom: 2px var(--color-btn) solid;
+  /* border-radius: 0.2rem; */
+}
+
+.form-group textarea{
+  border: none;
+}
+
+.form-group label{
+    padding-left: 0rem !important;
+    margin-left: 0rem !important;
+}
+
+.form-img input{
+    border: none;
+    height: auto;
+    background: transparent;
+    outline: none;      
+    /* width: 100%; */
+}
+.img-faq{
+  height: 45rem;
+}
+.form-img form{
+    /* width: 90% !important; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.textbox{
+    width: 90%;
+    /* position: relative; */
+    margin-bottom: 16px;
+}
+
+.textbox input{
+    width: 100%;
+    padding: 0 24px 0 36px;
+    border-bottom: 2px solid var(--color-primary);
+    height: 72px;        
+    color: var(--color-text-dark);
+}
+
+.form-img input:focus{
+    border-color: var(--color-btn);
+}
+:is(input:focus, input:valid)~span{
+    color: rgb(255 255 255/96%);
+}
+.textbox label{
+    position: absolute;
+    top: 50%;
+    left: 36px;
+    translate: 0 -50%;
+    color: var(--color-primary);
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+:is(input:focus, input:valid)~label{
+    translate: -40px -40px;
+    scale: 0.875;
+}
+.form-img input:focus ~ label{
+    color: var(--color-btn);
+}
+
+.form-img button{
+    margin-top: 2rem;
+}
+
+#file {
+    display: none;
+}
+
+.textbox2 label{
+    position: absolute;
+    top: -20%;
+    left: 36px;
+    translate: 0 -50%;
+    color: var(--color-primary);
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.textbox2 input{
+    width: 100%;
+    padding: 24px 24px 0 36px;
+    border-bottom: 2px solid var(--color-primary);
+    height: 72px;        
+    color: var(--color-text-dark);
+}
+
+.textbox2{
+    width: 90%;
+    position: relative;
+    margin-bottom: 16px;
+    margin-top: 3rem;
+    /* padding-bottom: 4rem; */
+}
+
 </style>
