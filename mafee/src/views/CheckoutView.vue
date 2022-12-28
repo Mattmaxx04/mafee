@@ -2,8 +2,9 @@
 import Cart from '../components/Cart.vue'
 import cart from '../store/cart';
 import user from '../store/user';
+import DataUser from '../components/DataUser.vue'
 import UserInfo from '../components/UserInfo.vue'
-import CreditCard from '../components/CreditCard.vue';
+// import CreditCard from '../components/CreditCard.vue';
 import { computed } from '@vue/reactivity'
 
 let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).reduce((beer1, beer2) => beer1 + beer2, 0))
@@ -27,51 +28,51 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
                 <input type="text" readonly class="form-control-plaintext" :value='total'>
             </div>
             <UserInfo :user="user" />
-            <CreditCard :user="user" />
+            <DataUser :user="user" />
+            <div class="d-flex justify-content-center">
+                <button class="m-3 btn__buy">BUY</button>
+            </div>
         </div>
 
         <div class="bar-right">
-            <div class="two">
+            <div class="two d-flex flex-column justfy-content-center align-items-center">
                 <h4>TOP RATED PRODUCTS</h4>
                 <div class="d-flex justify-content-center align-items-center">
-                    <img src="../assets/main-beer-img-4.jpg" alt="">
+                    <img class="beers__img" src="../assets/main-beer-img-4.jpg" alt="">
                     <div class="p-3">
                         <h6>IPA</h6>
-                        <div class="ratings">
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
+                        <p>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                        </p>
                         <p>$390</p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <img src="../assets/main-beer-img-11.jpg" alt="">
+                    <img class="beers__img" src="../assets/main-beer-img-11.jpg" alt="">
                     <div class="p-3">
                         <h6>HONEY</h6>
-                        <div class="ratings">
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
+                        <p>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                        </p>
                         <p>$390</p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <img src="../assets/main-beer-img-5.jpg" alt="">
+                    <img class="beers__img" src="../assets/main-beer-img-5.jpg" alt="">
                     <div class="p-3">
                         <h6>IPA</h6>
-                        <div class="ratings">
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star rating-color"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
+                        <p>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                            <i class="star"></i>
+                        </p>
                         <p>$420</p>
                     </div>
                 </div>
@@ -88,7 +89,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
             </div>
 
 
-            <img src="../assets/blog-banner.jpg" class="pt-4" alt="">
+            <img :class="banner__end" src="../assets/blog-banner.jpg" class="pt-4" alt="">
         </div>
     </div>
 
@@ -129,7 +130,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
 }
 
 input {
-    width: 4rem;
+    width: 5rem;
     color: var(--color-primary);
     font-size: 2rem;
     font-weight: bold;
@@ -151,21 +152,122 @@ input {
     margin-right: 2.5rem;
 }
 
-.bar-right img {
+.beers__img {
     width: 6rem;
 }
 
-.ratings {
-    margin-right: 10px;
+.two {
+    padding: 2rem 0rem;
+
 }
 
-.ratings i {
-
-    color: #cecece;
-    font-size: 32px;
+.two h4 {
+    text-align: center;
+    font-weight: bold;
 }
 
-.rating-color {
-    color: #fbc634 !important;
+.star {
+    position: relative;
+
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    margin-left: .9em;
+    margin-right: .9em;
+    margin-bottom: 1.2em;
+
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #FC0;
+    border-left: .3em solid transparent;
+
+    /* Controlls the size of the stars. */
+    font-size: 10px;
 }
+
+.star:before,
+.star:after {
+    content: '';
+
+    display: block;
+    width: 10;
+    height: 0;
+
+    position: absolute;
+    top: .6em;
+    left: -1em;
+
+    border-right: 1em solid transparent;
+    border-bottom: .7em solid #fbc634;
+    border-left: 1em solid transparent;
+
+    transform: rotate(-35deg);
+}
+
+.star:after {
+    transform: rotate(35deg);
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.one h4 {
+    font-weight: bold;
+    color: var(--color-btn);
+    border-top: 2px var(--color-btn) solid;
+    padding-top: 2rem;
+}
+
+.one p {
+    text-align: justify;
+}
+
+.one img {
+    border-radius: 1rem;
+}
+
+.icons {
+    display: flex;
+    padding-bottom: 3rem;
+    justify-content: space-around;
+    width: 10rem;
+}
+
+.icons i:hover {
+    color: var(--color-btn);
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    cursor: pointer;
+}
+
+.banner__end {
+    width: 220px;
+}
+
+.btn__buy{
+    background: none;
+    border: 2px var(--color-text-ligth) solid;
+    padding: 5rem;
+    background: var(--color-btn);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-text-dark);
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 !important;
+}
+
+.btn__buy:hover {
+    border: 4px var(--color-btn) solid;
+}
+
+.btn__buy p:hover {
+    background: black;
+    color: var(--color-btn);
+    border: 4px solid var(--color-btn);
+} 
+
 </style>
