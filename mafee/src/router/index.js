@@ -59,6 +59,11 @@ const router = createRouter({
       name: "workwithus",
       component: () => import("../views/WorkWithUsView.vue"),
     },    
+    {
+      path: "/checkout",
+      name: "checkout",
+      component: () => import("../views/CheckoutView.vue"),
+    },   
   ]
 })
 
