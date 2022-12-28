@@ -825,6 +825,9 @@ a:hover {
     html{
         width: 100vw;
     }
+    .home__discover{
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 768px) {}
