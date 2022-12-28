@@ -134,9 +134,12 @@ onMounted(() => {
             <p>Finally, the beer (on barrel) is stored for its correct distribution in the various markets.</p>
         </div>
     </div>
-
+    <div class="title2">
+        <h2 class="text-center">WHAT MAKES US UNIQUE</h2>
+    </div>
+    
     <div class="brewery container">
-        <h1>WHAT MAKES US UNIQUE</h1>
+        <!-- <h1>WHAT MAKES US UNIQUE</h1> -->
         <div class="brewery_main">
             <div class="brewery1 flex-column align-items-center justify-content-center">
                 <section>
@@ -192,6 +195,7 @@ onMounted(() => {
     <div class="offer">
         <h2>SERVICES OFFERED</h2>
     </div>
+    
     <div class="home__icons">
         <div class="icons">
             <img src="../assets/main-home-icon-1.png" alt="" srcset="">
@@ -788,6 +792,19 @@ onMounted(() => {
 }
 /*--------------brewery---------------*/
 
+.title2{
+    background-image: url(../assets/background-img-color.jpg);
+    padding: 5rem;
+    margin: 5rem 6rem 2rem 6rem;
+    border-radius: 3rem;
+}
+
+.title2 h2{
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: var(--color-btn);
+}
+
 .brewery {
     display: flex;
     /* padding: 5rem; */
@@ -871,7 +888,7 @@ onMounted(() => {
     /* background-position: center; */
     background-size: cover;
     padding: 12rem;
-    margin: 2rem 6rem 3rem 6rem;
+    margin: 2rem 6rem 6rem 6rem;
     color: white;
     font-weight: bold;
     border-radius: 5rem;
@@ -996,7 +1013,8 @@ onMounted(() => {
 
 .container_sponsors{
     background-image: url(../assets/background-color-dark-table.jpg);
-    margin: 3rem 5rem;
+    margin: 3rem 5rem 0rem 5rem;
+    border-radius: 5rem 5rem 0rem 0rem;
 }
 
 /*--------------news------------------*/

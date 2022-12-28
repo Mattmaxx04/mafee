@@ -88,9 +88,10 @@ console.log(beers);
         </div>
 
     </div>
-
+    <div class="title2">
+        <h2 class="text-center">BEER PRICE LIST</h2>
+    </div>
     <div class="list__container">
-        <h2>BEER PRICE LIST</h2>
         <List v-for="beer in beers" :beer="beer" :key="beer.id" />
     </div>
 
@@ -151,8 +152,11 @@ console.log(beers);
         </div>
 
     </div>
-    <div class="title_beer">
+    <!-- <div class="title_beer">
         <h2>BEER FLAVORS</h2>
+    </div> -->
+    <div class="title2">
+        <h2 class="text-center">BEER FLAVORS</h2>
     </div>
     <div class="beers">
         <Card v-for="beer in beers" :beer="beer" :key="beer.id" />
@@ -216,6 +220,19 @@ console.log(beers);
     background: black;
     color: var(--color-btn);
     border: 4px solid var(--color-btn);
+}
+
+.title2{
+    background-image: url(../assets/background-img-color.jpg);
+    padding: 5rem;
+    margin: 5rem 6rem 2rem 6rem;
+    border-radius: 3rem;
+}
+
+.title2 h2{
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: var(--color-btn);
 }
 
 /*--------------discover------------------*/
