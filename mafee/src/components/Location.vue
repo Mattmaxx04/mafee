@@ -47,12 +47,10 @@ import { ref, computed } from 'vue';
                                 <input type="text" class="form-control" value="1532313164">
                             </div>
                         </div>
-                    </div>
-                  
-
-                    <div class="account__btns">
-                    <button class="btn btn-dark">Update</button>
-                    <button class="btn btn-light">Cancel</button>
+                        <div class="buttons">
+                            <button class="btn btn-dark">Update</button>
+                            <button class="btn btn-light">Cancel</button>
+                        </div>
                     </div>
 
                 </div>
@@ -63,18 +61,22 @@ import { ref, computed } from 'vue';
 </template>
 
 <style scoped>
-.account__btns{
-    /* margin: 0.5rem!important; */
+/* .account__btns{
+    margin: 0.5rem!important;
     margin-left: 55rem !important;
-}
+} */
 
 .btn-dark{
     margin-right: 2rem !important;
 }
+
+.buttons{
+    margin-top: 2rem;
+}
 .title2{
     background-image: url(../assets/background-img-color.jpg);
     padding: 2rem 1rem 2rem 1rem;
-    margin: 1rem 15rem 4rem 15rem;
+    margin: 1rem 5.2rem 4rem 5.2rem;
     border-radius: 1rem;
 }
 
