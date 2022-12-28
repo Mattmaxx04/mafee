@@ -9,41 +9,39 @@
         <div class="footer__tasting">
             <h5>TASTING ROOM</h5>
             <div class="footer__tasting__time">
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
-            <p>THURSDAY:4PM-9PM</p>
+            <p>MONDAY: 4PM-9PM</p>
+            <p>TUESDAY: 4PM-9PM</p>
+            <p>WEDNESDAY: 4PM-9PM</p>
+            <p>THURSDAY: 4PM-9PM</p>
+            <p>FRIDAY: 4PM-9PM</p>
+            <p>SATURDAY: 4PM-9PM</p>
+            <p>SUNDAY: 4PM-9PM</p>
         </div>
         </div>
         <div class="footer__location">
             <h5>LOCATION</h5>
 
             <div class="footer__location__data">
-                <p>mailcontact@gmail.com</p>
-                <p>1-444-123-4579</p>
-                <p>Elandstrat 118B</p>
-                <p>1016 SH AMSTERDAM</p>
+                <p>mail: <a href="mailto:mafeebeers@gmail.com?Subject=Request%20en%20information">mafeebeers@gmail.com</a></p>
+                <p>phone: <a href="tel:+543816389120">+54 93816389120</a></p>
+                <p>Av. Independencia 1580</p>
+                <p>4000 San Miguel de Tucumán</p>
             </div>
-            <h6>GET DIRECTIONS</h6>
         </div>
         <div class="footer__news">
             <h5>OUR NEWSLETTER</h5>
-            <p> Lorem ipsum dolor sit amet,</p>
-                <p> consectetur adipisicing elit.</p>
+            <p> Subscribe to receive </p>
+                <p> more news and updated news.</p>
                 <form action="" class="footer__form">
                     <input type="text" placeholder="Your E-Mail">
                     <button class="btn__news"><i class="bi bi-caret-right"></i></button>
                 </form>
-            <div class="footer__media">
+            <!-- <div class="footer__media">
                 <i class="bi bi-instagram"></i>
                 <i class="bi bi-twitter"></i>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-globe-americas"></i>
-            </div>
+            </div> -->
 
         </div>
         <div class="footer__info">
@@ -59,9 +57,9 @@
         </div>
     </div>
     <div class="footer__down">
-        <p>©</p>
-        <p class="footer__down__rights">LEEM ,All Rights Reserved</p>
-        <p>Created By LEEM</p>
+        <p>© MAFEE ,All Rights Reserved</p>
+        <!-- <p class="footer__down__rights"></p> -->
+        <p>Created By LEEM Software</p>
     </div>
 
 
@@ -73,6 +71,8 @@
 
 h5{
     margin-bottom: 3rem;
+    font-weight: bold;
+    color: var(--color-btn);
 }
 h6{
     color: var(--color-primary);
@@ -83,7 +83,7 @@ margin-top: 2.3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 2rem;
 }
 p{
     margin-bottom: 0;
@@ -102,6 +102,9 @@ p{
 }
 .footer__form{
     margin-top: 2rem;
+}
+.footer__form input{
+    width: 12rem;
 }
 .btn__news{
     background: var(--color-primary);
@@ -127,15 +130,20 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--color-btn);
+}
+
 .footer__down{
     padding-right: 1rem;
     padding-left: 1rem;
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
+    padding-bottom: 1rem;
 }
 .footer__down__rights{
-    margin-right: 20rem;
+    margin-left: 2rem;
 }
 @media (max-width: 480px) {
   
