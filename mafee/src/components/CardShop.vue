@@ -49,7 +49,11 @@ const addToCart = (beer) => {
                 <p>Ibu: {{ beer.ibu }}</p>
                 <p>%Alc: {{ beer.alc }}</p>
             </div>
-            <div>
+            <div v-if="user" class="beer__info2">
+                <p>Ibu: {{ beer.ibu }}</p>
+                <p>%Alc: {{ beer.alc }}</p>
+            </div>
+            <div class="cart">
                 <button v-if="user" @click="addToCart(beer)"><img src="../assets/addCart-ico.png" alt=""></button>
             </div>
         </div>
@@ -65,10 +69,12 @@ const addToCart = (beer) => {
     flex: 25%;
     border: 12px var(--color-btn) solid;
     border-radius: 0rem 0rem 2rem 2rem;
-    border-style: groove;
+    /* border-style: groove; */
     /* padding: 2rem; */
     /* border-radius: 10% 90% 10% 90% / 75% 15% 85% 25% ; */
     position: relative;
+    border-image: url(../assets/background-color.jpg);
+    border-image-width: 15rem;
 }
 
 .beer {
@@ -79,6 +85,10 @@ const addToCart = (beer) => {
     width: 12vw;
     gap: 1rem;
     margin-top: 1rem;
+    border-top: var(--color-btn) 0.3rem solid;
+    border-bottom: var(--color-btn) 0.3rem solid;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
 }
 
 .price {
@@ -131,6 +141,26 @@ const addToCart = (beer) => {
     bottom: 10rem;
 }
 
+.beer__info2 {
+    color: transparent;
+    position: absolute;
+}
+
+.beer__info2 p{
+    font-weight: bold;
+}
+
+.beer__info2:hover{
+    background-color: var(--color-btn);
+    padding: 2.5rem 2rem 1rem 2rem;
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 1rem;
+    /* position: absolute; */
+    bottom: 17rem;
+}
+
 button img {
     width: 2rem;
 }
@@ -139,8 +169,29 @@ button img {
     font-weight: bold;
     border: 4px var(--color-btn) solid;
     padding: 0.6rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     border-radius: 1rem;
     font-size: 0.75rem;
+}
+
+/* .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+} */
+
+.cart button{
+    margin: 2rem 0rem 1rem 0rem;
+    border-radius: 1rem;
+    border: 4px var(--color-btn) solid;
+}
+
+.cart img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 </style>
