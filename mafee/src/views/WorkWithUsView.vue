@@ -35,9 +35,9 @@ const sendMessage = ()=> {
     </div>
     <div class="title2">
         <h2 class="text-center">PROCESS DETAILS</h2>
-    </div>
+    </div><!--
     <div class="team__img2">
-        <!-- autoplay -->
+         autoplay 
         <video src="../assets/video1.mp4" autoplay loop class="img__team2"></video> 
         <video src="../assets/video2.mp4" autoplay loop class="img__team2"></video>
         <video src="../assets/video3.mp4" autoplay loop class="img__team2"></video>
@@ -46,7 +46,7 @@ const sendMessage = ()=> {
         <video src="../assets/video4.mp4" autoplay loop class="img__team2"></video>
         <video src="../assets/video5.mp4" autoplay loop class="img__team2"></video>
         <video src="../assets/video6.mp4" autoplay loop class="img__team2"></video>
-    </div>
+    </div>-->
     <div class="title2">
         <h2 class="text-center">OUR WORK TEAM</h2>
     </div>
