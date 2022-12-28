@@ -6,11 +6,10 @@ import cart from '../store/cart'
 import user from '../store/user'
 import { computed } from '@vue/reactivity'
 
-
 const Swal = SweetAlert;
 const where = ()=> {
       Swal.fire({
-        text: 'Do you want to continue',
+        text: 'Av. Independencia 1580, San Miguel de Tucumán',
         confirmButtonText: 'Cool'
       });
     }

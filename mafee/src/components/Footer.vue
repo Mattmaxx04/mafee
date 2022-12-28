@@ -32,7 +32,7 @@ const news = ()=> {
                 <p>mail: <a href="mailto:mafeebeers@gmail.com?Subject=Request%20en%20information">mafeebeers@gmail.com</a></p>
                 <p>phone: <a href="tel:+543816389120">+54 93816389120</a></p>
                 <p>Av. Independencia 1580</p>
-                <p>4000 San Miguel de Tucumán</p>
+                <p>San Miguel de Tucumán</p>
             </div>
         </div>
         <div class="footer__news">
