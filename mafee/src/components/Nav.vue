@@ -149,7 +149,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
 
 .where {
     margin-left: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: bold;
     color: white;
     background: none;
@@ -157,9 +157,10 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
 }
 
 .btn__menu {
-    color: aliceblue;
+    color: white;
     font-size: 3.5rem;
     margin-right: 1rem;
+    margin-top: 3.5rem;
 }
 
 a {
@@ -185,6 +186,7 @@ a:hover {
     justify-content: center;
     margin-top: 2.5rem;
     font-size: 1rem;
+    margin-top: 5.5rem;
 }
 
 .nav__links a {
