@@ -65,14 +65,14 @@ const updatePost = computed(()=>{
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <img src="../assets/Blog-standard-img-5.jpg" alt="">
+                    <img src="../assets/blog-standard-img-5.jpg" alt="">
                     <div class="p-3">
                         <h6>RELAXING TIME</h6>
                         <p>Jun 16</p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
-                    <img src="../assets/Blog-standard-img-6.jpg" alt="">
+                    <img src="../assets/blog-standard-img-6.jpg" alt="">
                     <div class="p-3">
                         <h6>BREWERY PROCESS</h6>
                         <p>Nov 12</p>
