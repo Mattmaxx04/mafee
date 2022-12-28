@@ -10,7 +10,6 @@ import { computed } from '@vue/reactivity'
 const Swal = SweetAlert;
 const where = ()=> {
       Swal.fire({
-        title: 'Error!',
         text: 'Do you want to continue',
         confirmButtonText: 'Cool'
       });
