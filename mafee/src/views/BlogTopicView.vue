@@ -53,7 +53,7 @@ const updatePost = computed(()=>{
             <div class="one">
                 <h4>ABOUT</h4>
                 <img src="../assets/blog-author.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ullam officiis soluta nesciunt ducimus, ea pariatur consequuntur itaque illum nemo totam voluptatum doloremque aliquam aspernatur, praesentium nihil quibusdam quis qui?</p>
+                <p>Here we are going to talk about everything a little. The intention of the team is to be able to interact with customers (or not) and get to know each other a little more, through anecdotes and news.</p>
             </div>
             <div class="two">
                 <h4>RECENT POSTS</h4>
@@ -68,26 +68,26 @@ const updatePost = computed(()=>{
                     <img src="../assets/Blog-standard-img-5.jpg" alt="">
                     <div class="p-3">
                         <h6>RELAXING TIME</h6>
-                        <p>Feb 26</p>
+                        <p>Jun 16</p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <img src="../assets/Blog-standard-img-6.jpg" alt="">
                     <div class="p-3">
                         <h6>BREWERY PROCESS</h6>
-                        <p>Feb 26</p>
+                        <p>Nov 12</p>
                     </div>
                 </div>
             </div>
             <div class="one">
                 <h4>CATEGORIES</h4>
                 <ul>
-                    <li>Brewery(9)</li>
-                    <li>Competition(6)</li>
-                    <li>Craft(3)</li>
-                    <li>Events(2)</li>
-                    <li>Places(2)</li>
-                    <li>Pubs(3)</li>
+                    <li>Brewery (9)</li>
+                    <li>Competition (6)</li>
+                    <li>Craft (3)</li>
+                    <li>Events (2)</li>
+                    <li>Places (2)</li>
+                    <li>Pubs (3)</li>
                 </ul>
             </div>
             <div class="one">
@@ -122,7 +122,7 @@ const updatePost = computed(()=>{
                     </form>
                 </div>
             </div>
-            <img src="../assets/blog-banner.jpg" class="pt-4" alt="">
+            <img src="../assets/blog-banner.jpg" class="pt-4 banner" alt="">
         </div>
     </div>
 
@@ -216,6 +216,10 @@ a{
     width: 20%;
     display: flex;
     flex-direction: column;
+    background-image: url(../assets/background-color.jpg);
+    color: black;
+    padding: 2rem;
+    /* border-radius: 3rem; */
 }
 
 .one{
@@ -224,8 +228,19 @@ a{
     gap: 2rem;
 }
 
+.one h4{
+    font-weight: bold;
+    color: var(--color-btn);
+    border-top: 2px var(--color-btn) solid;
+    padding-top: 2rem;
+}
+
 .one p{
     text-align: justify;
+}
+
+.one img{
+    border-radius: 1rem;
 }
 
 .two img{
@@ -235,6 +250,13 @@ a{
 
 .two p{
     font-size: 0.8rem;
+}
+
+.two h4{
+    font-weight: bold;
+    color: var(--color-btn);
+    border-top: 2px var(--color-btn) solid;
+    padding-top: 2rem;
 }
 
 .two{
@@ -257,12 +279,54 @@ a{
     gap: 1rem;
 }
 
+.tags h4{
+    font-weight: bold;
+    color: var(--color-btn);
+    border-top: 2px var(--color-btn) solid;
+    padding-top: 2rem;
+}
+
 .tags div{
     justify-content: space-around;
 }
 
 .search{
     padding-top: 1rem;
+}
+
+.search h4{
+    font-weight: bold;
+    color: var(--color-btn);
+    border-top: 2px var(--color-btn) solid;
+    padding-top: 2rem;
+}
+
+.two h6{
+    font-weight: bold;
+}
+
+.two h6:hover{
+    color: var(--color-btn);
+    cursor: pointer;
+}
+
+.one li:hover{
+    font-weight: bold;
+    color: var(--color-btn);
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: var(--color-btn);
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    cursor: pointer;
+}
+
+.tags p:hover{
+    color: var(--color-btn);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .blog_img{
