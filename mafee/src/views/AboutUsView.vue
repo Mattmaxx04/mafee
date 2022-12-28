@@ -28,7 +28,7 @@ onMounted(() => {
         </div>
         <div class="home__discover3">
             <img src="../assets/home-3-slider-img-1.png" alt="">
-            <img src="../assets/Home-3-slider-img-3.png" alt="">
+            <img src="../assets/home-3-slider-img-3.png" alt="">
         </div>
     </div>
 
