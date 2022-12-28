@@ -214,6 +214,9 @@ input {
 }
 
 @media (max-width: 480px) {
+    .where{
+        display: none;
+    }
     .nav__links {
         display: none;
     }
