@@ -44,8 +44,11 @@ const beerFilter = () => {
             <img src="../assets/mafee-logo.png" alt="">
         </div>
     </div>
+    <div class="title2">
+        <h2 class="text-center">NEW FLAVIORS</h2>
+    </div>
     <div class="shop__flavors">
-        <h3>NEW FLAVORS</h3>
+        <!-- <h3>NEW FLAVORS</h3> -->
         <div class="beers">
             <Card v-for="beer in beers" :beer="beer" :key="beer.id" />
         </div>
