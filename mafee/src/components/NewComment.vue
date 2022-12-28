@@ -4,6 +4,15 @@ import user from '../store/user.js'
 import { ref } from 'vue';
 
 const body = ref('')
+const Swal = SweetAlert;
+const generated = ()=> {
+      Swal.fire({
+        title: 'Congratulations!',
+        text: 'You created a new comment.',
+        confirmButtonText: 'Cool'
+      });
+      body.value=""
+    }
 
 const props = defineProps({
     postid: '',
@@ -37,7 +46,7 @@ const addNewComment = () => {
                         </div>
                       
                         <div class="account__btns">
-                            <button @click.prevent="addNewComment" class="btn btn-dark">SEND</button>
+                            <button @click.prevent="addNewComment, generated()" class="btn btn-dark">SEND</button>
                         </div>
 
                           <!--<div class="col-md-6">

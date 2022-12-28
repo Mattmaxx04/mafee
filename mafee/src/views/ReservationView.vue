@@ -3,7 +3,7 @@ const Swal = SweetAlert;
 const send = ()=> {
       Swal.fire({
         title: 'Thanks!',
-        text: 'Your cv has been received.',
+        text: 'Your reservation has been received.',
         confirmButtonText: 'Cool'
       });
     }

@@ -118,6 +118,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
 }
 
 .btn__login {
+    text-align: center;
     width: 50%;
     padding: 0.8rem;
     margin: 1rem;

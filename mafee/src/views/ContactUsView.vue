@@ -4,7 +4,7 @@ const Swal = SweetAlert;
 const send = ()=> {
       Swal.fire({
         title: 'Thanks!',
-        text: 'Your email has been received.',
+        text: 'Your mail has been received.',
         confirmButtonText: 'Cool'
       });
     }
