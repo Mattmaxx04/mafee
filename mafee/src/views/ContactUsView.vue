@@ -1,5 +1,14 @@
 <script setup>
 
+const Swal = SweetAlert;
+const send = ()=> {
+      Swal.fire({
+        title: 'Thanks!',
+        text: 'Your email has been received.',
+        confirmButtonText: 'Cool'
+      });
+    }
+
 </script>
 
 <template>
@@ -59,7 +68,7 @@
                   style="height: 100px"></textarea>
                 <label for="floatingTextarea2" class="label-textarea">Notes</label>
             </div>
-            <button class="btn__more2" type="submit">
+            <button class="btn__more2" type="submit" @click.prevent="send()">
                 <p>SEND</p>
             </button>
         </form>

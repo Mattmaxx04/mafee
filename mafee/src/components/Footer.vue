@@ -1,5 +1,12 @@
 <script setup>
-
+const Swal = SweetAlert;
+const news = ()=> {
+      Swal.fire({
+        title: 'Thanks!',
+        text: 'Our newsletter will reach you soon.',
+        confirmButtonText: 'Cool'
+      });
+    }
 </script>
 
 <template>
@@ -33,8 +40,8 @@
             <p> Subscribe to receive </p>
                 <p> more news and updated news.</p>
                 <form action="" class="footer__form">
-                    <input type="text" placeholder="Your E-Mail">
-                    <button class="btn__news"><i class="bi bi-caret-right"></i></button>
+                    <input type="email" placeholder="Your E-Mail" required>
+                    <button class="btn__news" @click.prevent="news()"><i class="bi bi-caret-right"></i></button>
                 </form>
             <!-- <div class="footer__media">
                 <i class="bi bi-instagram"></i>

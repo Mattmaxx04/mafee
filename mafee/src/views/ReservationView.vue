@@ -1,5 +1,12 @@
 <script setup>
-
+const Swal = SweetAlert;
+const send = ()=> {
+      Swal.fire({
+        title: 'Thanks!',
+        text: 'Your cv has been received.',
+        confirmButtonText: 'Cool'
+      });
+    }
 </script>
 
 <template>
@@ -61,7 +68,7 @@
                 <label>Upload CV</label>
             </div> -->
             
-            <button class="btn__more2" type="submit">
+            <button class="btn__more2" type="submit" @click.prevent="send()">
                 <p>SEND</p>
             </button>
         </form>
