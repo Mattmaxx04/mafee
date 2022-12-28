@@ -191,7 +191,7 @@ console.log(beers);
             <div class="home__news__cards">
 
                 <div class="card" style="width: 18rem;">
-                    <img src="../assets/Blog-standard-img-1.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/blog-standard-img-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">SUMMIT BREWERY</h3>
                         <p class="card-text">At the brewery summit, we have the opportunity to meet both craft and
@@ -200,7 +200,7 @@ console.log(beers);
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="../assets/Blog-standard-img-2.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/blog-standard-img-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">CRAFT BEERS BARS</h3>
                         <p class="card-text">A new craft beer bar was inaugurated in one of the most visited places near
@@ -209,7 +209,7 @@ console.log(beers);
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="../assets/Blog-standard-img-4.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/blog-standard-img-4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">BEER DAY</h3>
                         <p class="card-text">The long-awaited day finally arrived and I say this because you know that
