@@ -477,4 +477,64 @@
     /* padding-bottom: 4rem; */
 }
 
+@media (max-width: 480px) {
+  
+    .home__discover{
+        margin: 0;
+        border-radius: 0;
+    }
+    .title{
+        margin: 0;
+        border-radius: 0;
+    }
+    .img__team{
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .title2{
+        margin: 0;
+        border-radius: 0;
+    }
+    .team__img{
+        flex-wrap: wrap;
+    }
+    .team__img2{
+        flex-wrap: wrap;
+    }
+    .us{
+        width: 100%;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    .the__team img{
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        width: 80%;
+        height: 80%;
+    }
+    .form-decoration{
+        flex-wrap: wrap;
+    }
+    .skills_container{
+        margin: 0;
+        
+        border-radius: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
 </style>
