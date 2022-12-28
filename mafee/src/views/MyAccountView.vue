@@ -28,7 +28,7 @@ onMounted(()=>{
 <template>
     <div class="account__container">
     <div class="account__banner">
-        <h2 class="centered">My Account</h2>
+        <h2 class="centered">MY ACCOUNT</h2>
     </div>
    <div v-if="!user" class="account__log">
     <Login />
@@ -58,6 +58,9 @@ h2{
     background-image: url("../assets/background-img-color.jpg");
     height: 10rem;
     width: 90%;
+    border-radius: 3rem;
+    margin: 2rem 5rem 2rem 5rem;
+    padding: 8rem 0rem 8rem 0rem;
 }
 .account__container{
     display: flex;
