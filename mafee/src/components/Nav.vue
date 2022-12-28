@@ -1,6 +1,15 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { logout } from '../firebase/auth.js'
+import Cart from './Cart.vue'
+import cart from '../store/cart'
+import user from '../store/user'
+import { computed } from '@vue/reactivity'
+
+
+let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).reduce((beer1, beer2) => beer1 + beer2, 0))
+
+
 </script>
 
 <template>
@@ -45,12 +54,37 @@ import { logout } from '../firebase/auth.js'
                     <RouterLink to="/shop"> SHOP </RouterLink>
 
                 </div>
+                <div v-if="!user">
+                    <p> Welcome! You need to login if you want to buy our products.</p>
+                </div>
+                <div v-if="user">
+                    <p> Hello! Thanks for visit us!.</p>
+                    <p v-if="cart.length == 0"> When you start shopping you will see your cart here!</p>
+                </div>
+
+                <div class="cart" v-if="user">
+                    <div v-if="cart.length != 0" class="head__list">
+                        <h6>Product</h6>
+                        <h6>Quantity</h6>
+                        <h6>Price</h6>
+                        <h6>Sub-Total</h6>
+                    </div>
+                    <Cart v-for="beer in cart" :beer="beer" :key="beer.id" />
+                    <div v-if="cart.length != 0" class="total">
+                        <h3>Total $</h3>
+                        <input type="text" readonly class="form-control-plaintext" :value='total'>
+                    </div>
+                </div>
+                <div class="button__buy">
+                    <RouterLink v-if="cart.length != 0" to="/account" class="btn__buy"> BUY! </RouterLink>
+                </div>
+
                 <div class="btns">
                     <RouterLink to="/account" class="btn__login"> Login </RouterLink>
 
                     <button class="btn__logout" @click="logout()">Logout</button>
                 </div>
-
+                
             </div>
         </div>
     </div>
@@ -71,11 +105,19 @@ import { logout } from '../firebase/auth.js'
     margin: 1rem;
     background: var(--color-btn);
 }
+
 .btn__logout{
     width: 50%;
     padding: 0.8rem;
     margin: 1rem;
     background: gray;
+}
+
+.btn__buy {
+    width: 4rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    background: var(--color-btn);
 }
 
 .menu__link {
@@ -130,6 +172,45 @@ a:hover {
 
 .nav__logo {
     width: 9%;
+}
+
+.head__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head__list h6 {
+    color: var(--color-text-dark);
+}
+
+.cart {
+    background-image: url(../assets/background-icon-2.jpg);
+    background-size: cover;
+    width: 23rem;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total h3 {
+    color: var(--color-text-dark);
+}
+
+input {
+    width: 4rem;
+    color: var(--color-primary);
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 0;
+    height: 2rem;
+}
+
+.btn__buy{
+    display: flex;
+    justify-content:flex-end;
 }
 
 @media (max-width: 480px) {
