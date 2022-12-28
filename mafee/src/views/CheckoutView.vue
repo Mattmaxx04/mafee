@@ -22,7 +22,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
 <template>
     <a href="https://api.whatsapp.com/send?phone=+543816389120&text=Hello. How are you? Would you give me information, please?"><img
                     src="../assets/wspp.png" alt="fotoChat" class="chat"></a>
-    <div class="checkout__banner">
+    <div class="checkout__banner container_main">
         <h2>CHECKOUT</h2>
     </div>
     <div class="d-flex container_main">
@@ -127,6 +127,10 @@ z-index: 999999;
   transform: scale(1.3);
 }
 
+.container_main{
+    margin: 0rem 2.5rem;
+}
+
 .checkout__banner {
     background-image: url(../assets/main-home-slider-12.jpg);
     background-size: cover;
@@ -136,11 +140,13 @@ z-index: 999999;
     align-items: center;
     height: 15rem;
     padding: 1.5rem;
-    margin: 4rem 2.5rem;
+    margin: 5rem 5rem;
+    border-radius: 3rem;
 }
 
 .checkout__banner h2 {
     color: var(--color-text-ligth);
+    font-weight: bold;
 }
 
 .cart {
@@ -149,6 +155,9 @@ z-index: 999999;
     margin-left: 2.5rem;
     background-image: url('../assets/background-img-icon.jpg');
     background-size: cover;
+    border-radius: 5rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
 }
 
 .head__list {
@@ -182,6 +191,8 @@ input {
     flex-direction: column;
     border: 2px var(--color-primary) solid;
     margin-right: 2.5rem;
+    border-radius: 3rem 3rem 0rem 0rem;
+    margin-bottom: 3rem;
 }
 
 .beers__img {
