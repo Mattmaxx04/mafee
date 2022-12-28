@@ -13,7 +13,7 @@ onMounted(()=>{
     <div class="home_main">
         <img src="../assets/home-masonry-10.png" alt="">
     </div>
-    <div class="home__discover">
+    <!-- <div class="home__discover">
         <h1>
             BEERS FAN WELCOME
         </h1>
@@ -23,7 +23,7 @@ onMounted(()=>{
         <button class="btn__more">
             <p> VIEW MORE </p>
         </button>
-    </div>
+    </div> -->
 
 
 
@@ -143,6 +143,7 @@ onMounted(()=>{
     background-size: cover;
     margin: 5rem;
     padding-left: 17rem;
+    border-radius: 4rem;
 }
 
 .home__discover {
