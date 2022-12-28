@@ -11,6 +11,22 @@ const props = defineProps({
     <img :src="beer.img" class="img__beer" alt="beer">
     <h6>{{beer.type}}</h6>
     </div>
+
+    <dic class="estono" hidden>
+        <img src="../assets/main-beer-img-1.jpg" alt="">
+        <img src="../assets/main-beer-img-2.jpg" alt="">
+        <img src="../assets/main-beer-img-3.jpg" alt="">
+        <img src="../assets/main-beer-img-4.jpg" alt="">
+        <img src="../assets/main-beer-img-5.jpg" alt="">
+        <img src="../assets/main-beer-img-6.jpg" alt="">
+        <img src="../assets/main-beer-img-7.jpg" alt="">
+        <img src="../assets/main-beer-img-8.jpg" alt="">
+        <img src="../assets/main-beer-img-9.jpg" alt="">
+        <img src="../assets/main-beer-img-10.jpg" alt="">
+        <img src="../assets/main-beer-img-11.jpg" alt="">
+        <img src="../assets/main-beer-img-12.jpg" alt="">
+    
+    </dic>
 </template>
 
 <style scoped>
