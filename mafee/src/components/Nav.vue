@@ -76,7 +76,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
                     </div>
                 </div>
                 <div class="button__buy">
-                    <RouterLink v-if="cart.length != 0" to="/account" class="btn__buy"> BUY! </RouterLink>
+                    <RouterLink v-if="cart.length != 0" to="/checkout" class="btn__buy"> BUY! </RouterLink>
                 </div>
 
                 <div class="btns">
