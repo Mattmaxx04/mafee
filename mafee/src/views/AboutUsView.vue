@@ -367,7 +367,10 @@ onMounted(() => {
             </div>
         </marquee>
     </div>
-
+    <a href="https://api.whatsapp.com/send?phone=+543816389120&text=Hello. How are you? Would you give me information, please?"><img
+                    src="../assets/wspp.png" alt="fotoChat" class="chat"></a>
+    <!-- <a href="https://api.whatsapp.com/send?phone=+1167313204&text=Hola!%20Te%20estas%20comunicando%20con%20Pet%20Shop%20PELM.%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte?"><img
+                    src="../img/chat2.png" alt="fotoChat" class="chat"></a> -->
 
     <!-- <div class="home__news__frame">
         <div class="home__news">
@@ -410,6 +413,25 @@ onMounted(() => {
 </template>
 
 <style scoped>
+
+.chat {
+  width: 3rem;
+height: auto;
+/* background-color: rgb(255, 245, 237,0.2); */
+/* border-radius: 50%; */
+position: fixed;
+bottom: 340px;
+left: 15px;
+cursor: pointer;
+/* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px transparent; */
+z-index: 999999;
+/* padding: 1rem; */
+}
+
+.chat:hover{
+  transform: scale(1.3);
+}
+
 .btn__more {
     background: none;
     border: 2px var(--color-text-ligth) solid;
