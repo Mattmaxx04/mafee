@@ -4,6 +4,8 @@ const props = defineProps({
     typeOf: Object,
 })
 
+console.log(props.comment);
+
 </script>
 
 <template>
@@ -13,7 +15,7 @@ const props = defineProps({
             <img :src="comment.photo" alt="">
             <div>
                 <h2>{{ comment.username }}</h2>
-                <p class="date_comment">{{ comment.date }}</p>
+                <!--<p class="date_comment">{{ comment.date }}</p>-->
                 <p>{{comment.body}}</p>
                 <p class="reply">REPLY</p>
             </div>

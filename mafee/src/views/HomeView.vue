@@ -9,6 +9,7 @@ onMounted(() => {
     getBeers()
 })
 
+console.log(beers);
 </script>
 
 <template>

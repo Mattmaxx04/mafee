@@ -14,7 +14,7 @@ const props = defineProps({
         <RouterLink :to="{path: '/blogtopic', query: { postid: post.id}}">
             
             <div class="blog_img" :style="{ 'background-image': 'url(' + post.img + ' )' }">
-                {{ post.id }}
+               
                 <p class="date_name">{{ post.month }}</p>
                 <p class="date_number">{{ post.day }}</p>
             </div>

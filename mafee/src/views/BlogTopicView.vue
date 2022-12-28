@@ -3,10 +3,12 @@ import posts from '../store/post.js'
 import { ref, computed } from 'vue';
 import PostDetails from '../components/PostDetails.vue'
 import { onMounted } from 'vue';
+import { getComments } from '../firebase/comments.js';
 import { getPost } from '../firebase/post.js';
 
 onMounted(()=>{
     getPost()
+    getComments()
 })
 
 const postWithId = ref([])
@@ -505,31 +507,4 @@ const updatePost = computed(()=>{
     margin: 0.5rem;
 }
 
-.form-group{
-  padding: 1rem;
-}
-
-.label-textarea{
-  padding-left: 2rem;
-  padding-top: 2rem;
-}
-
-.location{
-    width: 95%;
-    font-weight: bold;
-}
-
-.tab-content{
-    padding-top: 3rem;
-}
-
-.tab-content h3{
-    font-size: 2rem;
-    font-weight: bold;
-    padding-left: 1rem;
-}
-
-.form-check{
-    padding: 2rem 0rem 2rem 3rem;
-}
 </style>

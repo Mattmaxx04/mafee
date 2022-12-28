@@ -1,7 +1,10 @@
 <script setup>
 import Comments from '../components/Comments.vue'
+import NewComment from '../components/NewComment.vue'
 import { getComments } from '../firebase/comments.js';
 import { onMounted } from 'vue';
+import user from '../store/user.js'
+
 onMounted(()=>{
     getComments()
 })
@@ -11,6 +14,7 @@ const props = defineProps({
     typeof: Object
 })
 
+console.log(props.post.id);
 </script>
 
 <template>
@@ -38,8 +42,9 @@ const props = defineProps({
                     <i class="bi bi-linkedin"></i>
                 </div>
             </div>
-        </div>
+        </div>  
         <Comments :postid="post.id"/>
+        <NewComment :postid="post.id"/>     
     </div>
 
 
@@ -74,10 +79,11 @@ const props = defineProps({
                 <p>{{ post.subtitle }}</p>
             </div>
         </div>
-       
-        <Comments />
+        <Comments :postid="post.id"/>
+        <NewComment :postid="post.id"/>
     </div>
-    -->
+
+   
 
 
     <!--

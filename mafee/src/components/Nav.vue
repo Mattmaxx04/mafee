@@ -33,8 +33,8 @@ import {logout} from '../firebase/auth.js'
      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad provident a non eaque maiores?</p>
     </div>
     
-        <RouterLink v-if="!user" to="/account" class="btn__login"> Login </RouterLink>
-        <div v-if="user">
+        <RouterLink to="/account" class="btn__login"> Login </RouterLink>
+        <div >
         <button   @click="logout()">Logout</button>
     </div>
     

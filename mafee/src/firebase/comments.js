@@ -20,6 +20,7 @@ const commentRef = collection(db, "comments");
 const addComment = (comment) => {
   addDoc(collection(db, "comments"), comment);
 };
+
 const getComments = () => {
   onSnapshot(commentRef, (querySnapshot) => {
     comment.value = [];

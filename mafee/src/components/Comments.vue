@@ -2,14 +2,18 @@
 import comments from '../store/comments.js'
 import { ref, computed } from 'vue';
 import Comment from './Comment.vue';
+
 const commentsWithId = ref([])
+
 const props = defineProps({
     postid: '',
     typeOf: String,
 })
+
 const updateComments = computed(() => {
-    commentsWithId.value = comments.value.filter(comment => comment.comment_postid === props.postid)
+    commentsWithId.value = comments.value.filter(comment => comment.postid === props.postid)
 })
+
 </script>
 
 <template>
