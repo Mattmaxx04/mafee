@@ -1,86 +1,135 @@
 <script setup>
-import { RouterLink} from 'vue-router'
-import {logout} from '../firebase/auth.js'
+import { RouterLink } from 'vue-router'
+import { logout } from '../firebase/auth.js'
+import Cart from './Cart.vue'
+import cart from '../store/cart'
+import user from '../store/user'
+import { computed } from '@vue/reactivity'
+
+
+let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).reduce((beer1, beer2) => beer1 + beer2, 0))
+
+
 </script>
 
 <template>
     <div class="nav__container">
-        
+
         <a class="where" href="http://">WHERE TO TRY?</a>
-    <div class="nav__links">
+        <div class="nav__links">
             <RouterLink to="/"> HOME </RouterLink>
             <RouterLink to="/about"> WHAT WE OFFER</RouterLink>
             <RouterLink to="/workwithus"> MEET THE TEAM</RouterLink>
-            
+
             <img src="../assets/mafee-logo.png" class="nav__logo" alt="logo" srcset="">
-       
+
             <RouterLink to="/reservation"> RESERVATION </RouterLink>
             <RouterLink to="/contactus"> CONTACT US </RouterLink>
             <RouterLink to="/blogmain"> BLOG </RouterLink>
             <RouterLink to="/shop"> SHOP </RouterLink>
-            
+
         </div>
-        <a class="btn__menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <a class="btn__menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+            aria-controls="offcanvasExample">
             <i class="bi bi-list"></i>
-</a>
-<div class="offcanvas offcanvas-end show text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mafee Beers</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad provident a non eaque maiores?</p>
-    </div>
-    
-        <RouterLink v-if="!user" to="/account" class="btn__login"> Login </RouterLink>
-        <div v-if="user">
-        <button   @click="logout()">Logout</button>
-    </div>
-    
-  </div>
-</div>
+        </a>
+        <div class="offcanvas offcanvas-end show text-bg-dark" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mafee Beers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div v-if="!user">
+                    <p> Welcome! You need to login if you want to buy our products.</p>
+                </div>
+                <div v-if="user">
+                    <p> Hello! Thanks for visit us!.</p>
+                    <p v-if="cart.length == 0"> When you start shopping you will see your cart here!</p>
+                </div>
+
+                <div class="cart" v-if="user">
+                    <div v-if="cart.length != 0" class="head__list">
+                        <h6>Product</h6>
+                        <h6>Quantity</h6>
+                        <h6>Price</h6>
+                        <h6>Sub-Total</h6>
+                    </div>
+                    <Cart v-for="beer in cart" :beer="beer" :key="beer.id" />
+                    <div v-if="cart.length != 0" class="total">
+                        <h3>Total $</h3>
+                        <input type="text" readonly class="form-control-plaintext" :value='total'>
+                    </div>
+                </div>
+                <div class="button__buy">
+                    <RouterLink v-if="cart.length != 0" to="/account" class="btn__buy"> BUY! </RouterLink>
+                </div>
+                <RouterLink v-if="!user" to="/account" class="btn__login"> Login </RouterLink>
+                <button v-if="user" class="btn__logout" @click="logout()">Logout</button>
+
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
-.btn__login{
+.btn__login {
     width: 100%;
     padding: 0.8rem;
     margin: 1rem;
     background: var(--color-btn);
 }
-.menu__link{
+
+.btn__logout {
+    padding: 0.8rem;
+    margin: 1rem;
+    background: var(--color-btn);
+}
+
+.btn__buy {
+    width: 4rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    background: var(--color-btn);
+}
+
+.menu__link {
     font-size: 1.5rem;
 }
-.offcanvas-body p{
+
+.offcanvas-body p {
     margin: 1rem;
 
 }
 
-.where{
+.where {
     margin-left: 1rem;
     margin-top: 2rem;
     font-weight: bold;
 }
-.btn__menu{
+
+.btn__menu {
     color: aliceblue;
     font-size: 3.5rem;
     margin-right: 1rem;
 }
-a{
+
+a {
     text-decoration: none;
-    color: var(--color-text-ligth); 
+    color: var(--color-text-ligth);
 }
-a:hover{
+
+a:hover {
     color: var(--color-btn);
 }
-.nav__container{
+
+.nav__container {
     margin-top: -0.8rem;
     display: flex;
     justify-content: space-between;
 }
-.nav__links{
+
+.nav__links {
     width: 80%;
     gap: 1.5rem;
     display: flex;
@@ -90,11 +139,50 @@ a:hover{
     font-size: 1rem;
 }
 
-.nav__links a{
+.nav__links a {
     font-weight: bold;
 }
 
-.nav__logo{
+.nav__logo {
     width: 9%;
+}
+
+.head__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head__list h6 {
+    color: var(--color-text-dark);
+}
+
+.cart {
+    background-image: url(../assets/background-icon-2.jpg);
+    background-size: cover;
+    width: 23rem;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total h3 {
+    color: var(--color-text-dark);
+}
+
+input {
+    width: 4rem;
+    color: var(--color-primary);
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 0;
+    height: 2rem;
+}
+
+.btn__buy{
+    display: flex;
+    justify-content:flex-end;
 }
 </style>

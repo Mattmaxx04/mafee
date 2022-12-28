@@ -13,45 +13,31 @@ const props = defineProps({
     typeof: Object
 })
 
-
 const addToCart = (beer) => {
-    if (!cart.value.includes(beer.id)) {
-        addCart({
-            beerId: beer.id,
-            date: Date.now(),
-            type: beer.type,
-            userId: user.value.id,
-            img: beer.img,
-            quantity: 1,
-            price: beer.price
-        })
-        cart.value.forEach(beerAdded => {
-            console.log(beer.id);
-            if (beerAdded.beerid == beer.id) {
-                // beerAdded.quantity++
-                beer.stock--
-            }
-        })
-    } else {
-        cart.value.forEach(beerAdded => {
-            if (beerAdded.type == beer.type) {
-                if (beer.stock > 0) {
-                    beerAdded.quantity++;
-                    beer.stock--;
-                } else {
-
-                }
-
-            }
-        })
-
+    let index = cart.value.findIndex(beerI => beerI.id == beer.id)
+    if (beer.stock > 0) {
+        if (index == -1) {
+            cart.value.push({
+                id: beer.id,
+                date: Date.now(),
+                type: beer.type,
+                userId: user.value.id,
+                img: beer.img,
+                quantity: 1,
+                price: beer.price
+            })
+        } else {
+            cart.value[index].quantity++
+        }
+        beer.stock--
     }
+    console.log(cart);
 }
 </script>
 
 <template>
     <div class="beers">
-
+        <img v-if="beer.stock==0" class="img__beer__out" src="../assets/outstock.png" alt="">
         <img :src="beer.img" class="img__beer" alt="beer">
 
         <div class="beer">
@@ -64,7 +50,7 @@ const addToCart = (beer) => {
                 <p>%Alc: {{ beer.alc }}</p>
             </div>
             <div>
-                <button @click="addToCart(beer)"><img src="../assets/addCart-ico.png" alt=""></button>
+                <button v-if="user" @click="addToCart(beer)"><img src="../assets/addCart-ico.png" alt=""></button>
             </div>
         </div>
         <p>Stock: {{ beer.stock }}</p>
@@ -96,6 +82,13 @@ const addToCart = (beer) => {
 
 .img__beer {
     width: 99%;
+}
+
+.img__beer__out {
+    width: 99%;
+    position: absolute;
+    top: 4rem;
+    z-index: 10;
 }
 
 .bottom {
