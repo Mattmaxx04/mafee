@@ -35,13 +35,13 @@ const updatePost = computed(()=>{
     </div>
     <div class="home__discover">
         <h1>
-            BEER FANS KEEP UP THE FUN
+            COME HAVE FUN AND MEET THE COMMUNITY
         </h1>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus voluptate qui debitis. Rem nemo reiciendis similique dignissimos voluptatem harum delectus! Fugiat quia similique vel ipsum architecto reiciendis. Tempore, distinctio.
+            If you are a fan of beer, then you must continue to have fun with us and our stories, so we invite you to return to the blog and continue participating in our stories, our talks, our anecdotes. We thank you for your participation. Each comment adds to us and allows us to continue growing together with you.
         </p>
         <button class="btn__more">
-            <p> VIEW MORE </p>
+            <RouterLink to="/blogmain"> <p> RETURN TO THE BLOG </p> </RouterLink>
         </button>
     </div>
 
@@ -148,6 +148,20 @@ const updatePost = computed(()=>{
     margin: 0 !important;
 }
 
+.btn__more:hover {
+    border: 2px var(--color-btn) solid;
+}
+
+.btn__more p:hover {
+    background: black;
+    color: var(--color-btn);
+    border: 2px solid var(--color-btn);
+}
+
+a{
+    text-decoration: none;
+}
+
 /*--------------discover------------------*/
 
 .home_main{
@@ -163,7 +177,7 @@ const updatePost = computed(()=>{
     background-position: center;
     background-size: cover;
     padding: 10rem;
-    height: 30rem;
+    height: 40rem;
     /* margin-top: 3rem; */
     margin: 5rem 5rem 5rem 5rem;
     display: flex;
