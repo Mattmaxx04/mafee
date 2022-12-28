@@ -110,10 +110,30 @@ const send = ()=> {
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8917827159485!2d-65.23091488480229!3d-26.843394083157516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c799ae43cd7%3A0x953da00896cdc8f1!2sBlock%203%20-%20Decanato%20-%20Facultad%20de%20Ciencias%20Exactas%20y%20Tecnolog%C3%ADa%20de%20la%20U.N.T.!5e0!3m2!1ses-419!2sar!4v1672050533088!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
     </div>
+    <a href="https://api.whatsapp.com/send?phone=+543816389120&text=Hello. How are you? Would you give me information, please?"><img
+                    src="../assets/wspp.png" alt="fotoChat" class="chat"></a>
 
 </template>
 
 <style scoped>
+
+.chat {
+  width: 3rem;
+height: auto;
+/* background-color: rgb(255, 245, 237,0.2); */
+/* border-radius: 50%; */
+position: fixed;
+bottom: 75px;
+left: 15px;
+cursor: pointer;
+/* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px transparent; */
+z-index: 999999;
+/* padding: 1rem; */
+}
+
+.chat:hover{
+  transform: scale(1.3);
+}
 
 .title2{
     background-image: url(../assets/background-img-color.jpg);

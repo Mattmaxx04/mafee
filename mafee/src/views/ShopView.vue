@@ -33,6 +33,8 @@ const beerFilter = () => {
 </script>
 
 <template>
+    <a href="https://api.whatsapp.com/send?phone=+543816389120&text=Hello. How are you? Would you give me information, please?"><img
+                    src="../assets/wspp.png" alt="fotoChat" class="chat"></a>
     <div class="shop__init">
         <div class="shop__init__text">
             <h2>NEW FLAVORS & OLD QUALITY</h2>
@@ -172,6 +174,24 @@ const beerFilter = () => {
 </template>
 
 <style scoped>
+
+.chat {
+  width: 3rem;
+height: auto;
+/* background-color: rgb(255, 245, 237,0.2); */
+/* border-radius: 50%; */
+position: fixed;
+bottom: 75px;
+left: 15px;
+cursor: pointer;
+/* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px transparent; */
+z-index: 999999;
+/* padding: 1rem; */
+}
+
+.chat:hover{
+  transform: scale(1.3);
+}
 
 a{
     text-decoration: none;

@@ -9,6 +9,16 @@ onMounted(() => {
     getBeers()
 })
 
+// $(document).ready(function(){ irArriba(); }); //Hacia arriba
+
+// function irArriba(){
+//   $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
+//   $(window).scroll(function(){
+//     if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
+//   });
+//   $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
+// }
+
 </script>
 
 <template>
@@ -371,7 +381,14 @@ onMounted(() => {
                     src="../assets/wspp.png" alt="fotoChat" class="chat"></a>
     <!-- <a href="https://api.whatsapp.com/send?phone=+1167313204&text=Hola!%20Te%20estas%20comunicando%20con%20Pet%20Shop%20PELM.%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte?"><img
                     src="../img/chat2.png" alt="fotoChat" class="chat"></a> -->
-
+    <!-- <div class="go-top-container">
+        <div class="go-top-button">
+            <img src="../assets/arrow.svg" alt="arrow">
+        </div>
+    </div> -->
+    <!-- <button @click.prevent="irArriba()" class="ir-arriba" javascript:void(0) title="Volver arriba">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button> -->
     <!-- <div class="home__news__frame">
         <div class="home__news">
             <h2>NEWS & EVENTS</h2>
@@ -414,13 +431,25 @@ onMounted(() => {
 
 <style scoped>
 
+/* .ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+} */
+
 .chat {
   width: 3rem;
 height: auto;
 /* background-color: rgb(255, 245, 237,0.2); */
 /* border-radius: 50%; */
 position: fixed;
-bottom: 340px;
+bottom: 75px;
 left: 15px;
 cursor: pointer;
 /* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px transparent; */
@@ -1133,6 +1162,69 @@ a:hover {
     border-radius: 0 !important;
 }
 
+/*-------------ARROW------------*/
+
+/* .go-top-container{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem !important;
+    width: 5rem;
+    height: 5rem;
+    z-index: -1;
+}
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button img{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    width: 5rem;
+    transform: translate(-50%, -50%);
+    color: var(--color-btn);
+}
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 6rem;
+    height: 6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+} */
+
+/*----------------MEDIA-----------*/
+
 @media (max-width: 480px) {
     .home__discover {
         flex-wrap: wrap;
@@ -1244,3 +1336,6 @@ a:hover {
 
 @media (max-width: 1200px) {}
 </style>
+
+
+
