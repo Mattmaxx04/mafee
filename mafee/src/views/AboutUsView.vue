@@ -21,7 +21,9 @@ onMounted(() => {
                 TRADICIONAL RECIPES FOR MODERN JOY
             </h1>
             <button class="btn__more">
-                <RouterLink to="/account"> <p> Do not miss it </p> </RouterLink>
+                <RouterLink to="/account">
+                    <p> Do not miss it </p>
+                </RouterLink>
             </button>
         </div>
         <div class="home__discover3">
@@ -55,9 +57,13 @@ onMounted(() => {
                 <img src="../assets/logo_sin_fondo.png" class="aromas__img" alt="" srcset="">
                 <div class="aromas__text">
                     <h2>FLAVORS YOUR LOVE</h2>
-                    <P>Be part of this rediscovery of Argentine beer, trying each of the flavors we have. There are not many, but little by little we are growing, dedicating the time that is necessary as long as our products are of quality.</P>
+                    <P>Be part of this rediscovery of Argentine beer, trying each of the flavors we have. There are not
+                        many, but little by little we are growing, dedicating the time that is necessary as long as our
+                        products are of quality.</P>
                     <button class="btn__more2">
-                        <RouterLink to="/shop"> <p> GO TO THE STORE </p> </RouterLink>
+                        <RouterLink to="/shop">
+                            <p> GO TO THE STORE </p>
+                        </RouterLink>
                     </button>
                 </div>
             </div>
@@ -82,7 +88,10 @@ onMounted(() => {
         </div>
         <div class="quality3">
             <h2>ELABORATION PROCESS</h2>
-            <p>What sets us apart from the rest? We respect 100% the imposed hygiene and safety standards, which gives us great effectiveness when it comes to obtaining the product. On the other hand, we do not require a large filtering system, due to all the previous process that is treated with great care and excellence. Finally, we do not use as many artificial additives, to preserve the quality of the beer.</p>
+            <p>What sets us apart from the rest? We respect 100% the imposed hygiene and safety standards, which gives
+                us great effectiveness when it comes to obtaining the product. On the other hand, we do not require a
+                large filtering system, due to all the previous process that is treated with great care and excellence.
+                Finally, we do not use as many artificial additives, to preserve the quality of the beer.</p>
             <div class="meet__progress">
                 <div class="d-flex justify-content-between">
                     <h6> BREWERY PROCESS</h6>
@@ -121,12 +130,14 @@ onMounted(() => {
         <div class="process2">
             <img src="../assets/about-home-process-2.png" alt="">
             <h2>SEPARATION</h2>
-            <p>Once the raw material is chosen, the grains are obtained according to the beer that is intended to be produced.</p>
+            <p>Once the raw material is chosen, the grains are obtained according to the beer that is intended to be
+                produced.</p>
         </div>
         <div class="process3">
             <img src="../assets/about-home-process-4.png" alt="">
             <h2>PRODUCTION</h2>
-            <p>Begins the brewing process using the necessary instruments according to hygiene and safety regulations.</p>
+            <p>Begins the brewing process using the necessary instruments according to hygiene and safety regulations.
+            </p>
         </div>
         <div class="process4">
             <img src="../assets/about-home-process-3.png" alt="">
@@ -137,7 +148,7 @@ onMounted(() => {
     <div class="title2">
         <h2 class="text-center">WHAT MAKES US UNIQUE</h2>
     </div>
-    
+
     <div class="brewery container">
         <!-- <h1>WHAT MAKES US UNIQUE</h1> -->
         <div class="brewery_main">
@@ -145,21 +156,24 @@ onMounted(() => {
                 <section>
                     <div class="brewery_text">
                         <h4>PROSECUTION</h4>
-                        <p>We use pilot plant equipment provided by the faculty, while we strengthen ourselves in improving our own equipment.</p>
+                        <p>We use pilot plant equipment provided by the faculty, while we strengthen ourselves in
+                            improving our own equipment.</p>
                     </div>
                     <img src="../assets/about-home-04-icon-2.png" alt="">
                 </section>
                 <section>
                     <div class="brewery_text">
                         <h4>DRUMS</h4>
-                        <p>Instead of the typical beer keg, we use biodegradable drums to contribute to the environment and make a difference.</p>
+                        <p>Instead of the typical beer keg, we use biodegradable drums to contribute to the environment
+                            and make a difference.</p>
                     </div>
                     <img src="../assets/about-home-04-icon-3.png" alt="">
                 </section>
                 <section>
                     <div class="brewery_text">
                         <h4>AUTOMATION</h4>
-                        <p>We use economical but state-of-the-art systems, which allow us to maintain quality and take care of our income, as well as those of our clients.</p>
+                        <p>We use economical but state-of-the-art systems, which allow us to maintain quality and take
+                            care of our income, as well as those of our clients.</p>
                     </div>
                     <img src="../assets/about-home-04-icon-4.png" alt="">
                 </section>
@@ -171,14 +185,16 @@ onMounted(() => {
                 <section>
                     <div class="brewery_text">
                         <h4>QUALITY</h4>
-                        <p>We always take care of the quality of the product according to hygiene and safety regulations.</p>
+                        <p>We always take care of the quality of the product according to hygiene and safety
+                            regulations.</p>
                     </div>
                     <img src="../assets/about-home-04-icon-5.png" alt="">
                 </section>
                 <section>
                     <div class="brewery_text">
                         <h4>CAREFUL</h4>
-                        <p>We have the certificate of authentication provided by the Argentine health system and the Chamber of Craft Brewers.</p>
+                        <p>We have the certificate of authentication provided by the Argentine health system and the
+                            Chamber of Craft Brewers.</p>
                     </div>
                     <img src="../assets/about-home-04-icon-6.png" alt="">
                 </section>
@@ -195,7 +211,7 @@ onMounted(() => {
     <div class="offer">
         <h2>SERVICES OFFERED</h2>
     </div>
-    
+
     <div class="home__icons">
         <div class="icons">
             <img src="../assets/main-home-icon-1.png" alt="" srcset="">
@@ -210,7 +226,8 @@ onMounted(() => {
         <div class="icons">
             <img src="../assets/main-home-icon-3.png" alt="" srcset="">
             <h3>PACKAGING</h3>
-            <p>As you can see in what the design of the web page is, we also take care of what the design is when it comes to delivering our products in first-line packaging.</p>
+            <p>As you can see in what the design of the web page is, we also take care of what the design is when it
+                comes to delivering our products in first-line packaging.</p>
         </div>
         <div class="icons">
             <img src="../assets/main-home-icon-2.png" alt="" srcset="">
@@ -222,22 +239,27 @@ onMounted(() => {
         <div class="icons">
             <img src="../assets/offerings-custom-icon-1.png" alt="" srcset="">
             <h3>TAP ROOM</h3>
-            <p>By working with craft beers, we do not depend on the stock of other breweries. So with us you can enjoy everything you want.</p>
+            <p>By working with craft beers, we do not depend on the stock of other breweries. So with us you can enjoy
+                everything you want.</p>
         </div>
         <div class="icons">
             <img src="../assets/offerings-custom-icon-2.png" alt="" srcset="">
             <h3>PUBS & BARS</h3>
-            <p>We have a wide variety of branches, from bars, pubs and even kiosks that already have stock of our beers. So don't hesitate and try them.</p>
+            <p>We have a wide variety of branches, from bars, pubs and even kiosks that already have stock of our beers.
+                So don't hesitate and try them.</p>
         </div>
         <div class="icons">
             <img src="../assets/offerings-custom-icon-3.png" alt="" srcset="">
             <h3>FLAVOURS</h3>
-            <p>If we differ in something, it is that we have the right amount of flavors, so as not to cover so much and focus on what really matters to us, which is quality.</p>
+            <p>If we differ in something, it is that we have the right amount of flavors, so as not to cover so much and
+                focus on what really matters to us, which is quality.</p>
         </div>
         <div class="icons">
             <img src="../assets/offerings-custom-icon-4.png" alt="" srcset="">
             <h3>GIFT SHOP</h3>
-            <p>And of course not to mention the most important thing, because after all if you are here it is to buy beer. That is why we have our own store, where you can buy as much beer as you want, whenever you want.</p>
+            <p>And of course not to mention the most important thing, because after all if you are here it is to buy
+                beer. That is why we have our own store, where you can buy as much beer as you want, whenever you want.
+            </p>
         </div>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -258,7 +280,8 @@ onMounted(() => {
                 <img src="../assets/background-icon-1.png" class="d-block w-100" alt="Family in the cinema">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="title-carousel">WHAT THEY SAY ABOUT US</h5>
-                    <p class="paragraph1">It really was a unique experience, both being able to share with all my friends when leaving the Faculty and being able to enjoy a delicious glass of beer.</p>
+                    <p class="paragraph1">It really was a unique experience, both being able to share with all my
+                        friends when leaving the Faculty and being able to enjoy a delicious glass of beer.</p>
                     <p class="paragraph2">
                         - EMANUEL TARIFA
                     </p>
@@ -268,7 +291,9 @@ onMounted(() => {
                 <img src="../assets/background-icon-1.png" class="d-block w-100" alt="A concert">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="title-carousel">WHAT THEY SAY ABOUT US</h5>
-                    <p class="paragraph1">I am grateful for the opportunity to have tried the beer at the beginning of all this, because that allowed me to get to know it and to be able to recommend it to my friends and co-workers. A delight.</p>
+                    <p class="paragraph1">I am grateful for the opportunity to have tried the beer at the beginning of
+                        all this, because that allowed me to get to know it and to be able to recommend it to my friends
+                        and co-workers. A delight.</p>
                     <p class="paragraph2">
                         - ANA CAROLINA CARRIZO
                     </p>
@@ -278,7 +303,9 @@ onMounted(() => {
                 <img src="../assets/background-icon-1.png" class="d-block w-100" alt="A marathon">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="title-carousel">WHAT THEY SAY ABOUT US</h5>
-                    <p class="paragraph1">Wow! What to tell them? The beer is extraordinary. The truth is very rich, even more considering that it is handmade and the children do not have the capital and machinery of large companies.</p>
+                    <p class="paragraph1">Wow! What to tell them? The beer is extraordinary. The truth is very rich,
+                        even more considering that it is handmade and the children do not have the capital and machinery
+                        of large companies.</p>
                     <p class="paragraph2">
                         - MARI CAJAL
                     </p>
@@ -288,7 +315,8 @@ onMounted(() => {
                 <img src="../assets/background-icon-1.png" class="d-block w-100" alt="Museum">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="title-carousel">WHAT THEY SAY ABOUT US</h5>
-                    <p class="paragraph1">The truth is that a very rich beer. At first I was suspicious, but once I tried it, I took a trip to another world. It was really beautiful!</p>
+                    <p class="paragraph1">The truth is that a very rich beer. At first I was suspicious, but once I
+                        tried it, I took a trip to another world. It was really beautiful!</p>
                     <p class="paragraph2">
                         - ELÍAS PRADO
                     </p>
@@ -298,7 +326,9 @@ onMounted(() => {
                 <img src="../assets/background-icon-1.png" class="d-block w-100" alt="Food">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="title-carousel">WHAT THEY SAY ABOUT US</h5>
-                    <p class="paragraph1">He was one of the boys who initially tried the beer in what was the Faculty project. I really thought that they had to build their business with this, but I never thought it would be such a success so quickly. They deserve it!</p>
+                    <p class="paragraph1">He was one of the boys who initially tried the beer in what was the Faculty
+                        project. I really thought that they had to build their business with this, but I never thought
+                        it would be such a success so quickly. They deserve it!</p>
                     <p class="paragraph2">
                         - MELIZA ZELARAYAN
                     </p>
@@ -317,28 +347,28 @@ onMounted(() => {
         </button>
     </div>
     <div class="container_sponsors">
-        <marquee direction="right"  scrolldelay="1">
+        <marquee direction="right" scrolldelay="1">
             <div class="sponsors">
-                    <div>
-                        <img src="../assets/about-sponsor-1.png" alt="">
-                    </div>
-                    <div>
-                        <img src="../assets/about-sponsor-2.png" alt="">
-                    </div>
-                    <div>
-                        <img src="../assets/about-sponsor-3.png" alt="">
-                    </div>
-                    <div>
-                        <img src="../assets/about-sponsor-4.png" alt="">
-                    </div>
-                    <div>
-                        <img src="../assets/about-sponsor-5.png" alt="">
-                    </div>
+                <div>
+                    <img src="../assets/about-sponsor-1.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/about-sponsor-2.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/about-sponsor-3.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/about-sponsor-4.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/about-sponsor-5.png" alt="">
+                </div>
             </div>
         </marquee>
     </div>
-        
-    
+
+
     <!-- <div class="home__news__frame">
         <div class="home__news">
             <h2>NEWS & EVENTS</h2>
@@ -431,7 +461,7 @@ onMounted(() => {
     border: 2px solid var(--color-btn);
 }
 
-.button_main{
+.button_main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -483,11 +513,11 @@ onMounted(() => {
     border-radius: 5rem;
 }
 
-.home__discover img{
+.home__discover img {
     width: 15rem;
 }
 
-.home__discover2{
+.home__discover2 {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -497,29 +527,29 @@ onMounted(() => {
     text-align: center;
 }
 
-.home__discover2 p{
+.home__discover2 p {
     text-transform: uppercase;
 }
 
-.home__discover2 h1{
+.home__discover2 h1 {
     font-weight: bold;
 }
 
-.home__discover3{
+.home__discover3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.home__discover1 img:hover{
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
+.home__discover1 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
-.home__discover3 img:hover{
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
+.home__discover3 img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 /*--------------crafted------------------*/
@@ -531,7 +561,7 @@ onMounted(() => {
     color: white;
 }
 
-.home__crafted1{
+.home__crafted1 {
     background-image: url(../assets/about-home-4-banner-img-1.jpg);
     padding: 1rem;
     background-size: cover;
@@ -540,23 +570,7 @@ onMounted(() => {
     /* border: 2px solid black; */
 }
 
-.home__crafted1 h2{
-    border-radius: 3rem;
-    border: 3px solid white;
-    padding: 7rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-}
-.home__crafted2 h2{
-    border-radius: 3rem;
-    border: 3px solid white;
-    padding: 7rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: white;
-}
-.home__crafted3 h2{
+.home__crafted1 h2 {
     border-radius: 3rem;
     border: 3px solid white;
     padding: 7rem;
@@ -565,26 +579,46 @@ onMounted(() => {
     color: white;
 }
 
-.home__crafted1 h2:hover{
-    -webkit-transform:scale(1.7);
-    transform:scale(1.7);
-    border: none;
-    color: black;
+.home__crafted2 h2 {
+    border-radius: 3rem;
+    border: 3px solid white;
+    padding: 7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
 }
-.home__crafted2 h2:hover{
-    -webkit-transform:scale(1.7);
-    transform:scale(1.7);
-    border: none;
-    color: black;
+
+.home__crafted3 h2 {
+    border-radius: 3rem;
+    border: 3px solid white;
+    padding: 7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
 }
-.home__crafted3 h2:hover{
-    -webkit-transform:scale(1.7);
-    transform:scale(1.7);
+
+.home__crafted1 h2:hover {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
     border: none;
     color: black;
 }
 
-.home__crafted2{
+.home__crafted2 h2:hover {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    border: none;
+    color: black;
+}
+
+.home__crafted3 h2:hover {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    border: none;
+    color: black;
+}
+
+.home__crafted2 {
     background-image: url(../assets/about-home-4-banner-img-2.jpg);
     padding: 1rem;
     background-size: cover;
@@ -592,7 +626,7 @@ onMounted(() => {
     border-radius: 3rem;
 }
 
-.home__crafted3{
+.home__crafted3 {
     background-image: url(../assets/about-home-4-banner-img-3.jpg);
     padding: 1rem;
     background-size: cover;
@@ -600,13 +634,15 @@ onMounted(() => {
     border-radius: 3rem;
 }
 
-.home__crafted3:hover{
+.home__crafted3:hover {
     opacity: 0.7;
 }
-.home__crafted1:hover{
+
+.home__crafted1:hover {
     opacity: 0.7;
 }
-.home__crafted2:hover{
+
+.home__crafted2:hover {
     opacity: 0.7;
 }
 
@@ -634,10 +670,12 @@ onMounted(() => {
     border: 3px var(--color-text-ligth) solid;
     border-radius: 5rem;
 }
-.home__aromas__content img{
+
+.home__aromas__content img {
     margin: 4rem;
 }
-.aromas__text{
+
+.aromas__text {
     display: flex;
     width: 39%;
     color: var(--color-text-ligth);
@@ -653,24 +691,25 @@ onMounted(() => {
     border-radius: 5rem;
 
 }
-.aromas__text p{
+
+.aromas__text p {
     font-size: 1.5rem;
     font-weight: 400;
     text-align: justify;
 }
 
-.aromas__text h2{
+.aromas__text h2 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
 
-.aromas__text button>p{
+.aromas__text button>p {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.aromas__img{
+.aromas__img {
     width: 24rem;
 }
 
@@ -679,7 +718,7 @@ onMounted(() => {
 .quality {
     display: flex;
     /* padding: 5rem; */
-    justify-content:space-around;
+    justify-content: space-around;
     /* gap: 5rem; */
     color: black;
     padding: 2rem 6rem 2rem 6rem;
@@ -687,36 +726,38 @@ onMounted(() => {
     gap: 3rem;
 }
 
-.quality1{
+.quality1 {
     padding-bottom: 2rem;
 }
 
-.quality2{
-    padding-bottom: 2rem;
-}
-.quality3{
+.quality2 {
     padding-bottom: 2rem;
 }
 
-.quality1 img{
+.quality3 {
+    padding-bottom: 2rem;
+}
+
+.quality1 img {
     border-radius: 5rem;
 }
-.quality2 img{
+
+.quality2 img {
     border-radius: 5rem;
 }
 
-.quality3{
+.quality3 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center !important;
 }
 
-.quality3 p{
+.quality3 p {
     text-align: justify;
 }
 
-.quality3 h2{
+.quality3 h2 {
     font-weight: bold;
 }
 
@@ -759,47 +800,52 @@ onMounted(() => {
     border-radius: 5rem;
 }
 
-.process1{
+.process1 {
     padding: 1rem;
 }
 
-.process2{
-    padding: 1rem;
-}
-.process3{
-    padding: 1rem;
-}
-.process4{
+.process2 {
     padding: 1rem;
 }
 
-.process1 h2{
+.process3 {
+    padding: 1rem;
+}
+
+.process4 {
+    padding: 1rem;
+}
+
+.process1 h2 {
     padding: 1.5rem 0rem;
     font-weight: bold;
 }
 
-.process2 h2{
+.process2 h2 {
     padding: 1.5rem 0rem;
     font-weight: bold;
 }
-.process3 h2{
+
+.process3 h2 {
     padding: 1.5rem 0rem;
     font-weight: bold;
 }
-.process4 h2{
+
+.process4 h2 {
     padding: 1.5rem 0rem;
     font-weight: bold;
 }
+
 /*--------------brewery---------------*/
 
-.title2{
+.title2 {
     background-image: url(../assets/background-img-color.jpg);
     padding: 5rem;
     margin: 5rem 6rem 2rem 6rem;
     border-radius: 3rem;
 }
 
-.title2 h2{
+.title2 h2 {
     font-weight: bold;
     font-size: 2.2rem;
     color: var(--color-btn);
@@ -823,67 +869,70 @@ onMounted(() => {
     margin-bottom: 2rem;
 }
 
-.brewery h1{
+.brewery h1 {
     font-weight: bold;
     color: var(--color-btn);
     padding-bottom: 2rem;
 }
 
-.brewery_main{
+.brewery_main {
     padding: 1rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1px );
-    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.brewery_main section{
+.brewery_main section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.brewery1{
+.brewery1 {
     padding: 1rem;
     display: flex;
     gap: 2rem;
 }
-.brewery2{
+
+.brewery2 {
     padding: 1rem;
 }
-.brewery3{
+
+.brewery3 {
     padding: 1rem;
     display: flex;
     gap: 2rem;
 }
-.brewery1 img{
+
+.brewery1 img {
     width: 5rem;
     height: 5rem;
 }
 
-.brewery3 img{
+.brewery3 img {
     width: 5rem;
     height: 5rem;
 }
 
-.brewery_text{
+.brewery_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.brewery_text h4{
+.brewery_text h4 {
     font-weight: bold;
     color: var(--color-btn);
 }
 
 /*--------------offer------------------*/
 
-.offer{
+.offer {
     background-image: url(../assets/offerings-title-img.jpg);
     /* background-position: center; */
     background-size: cover;
@@ -911,18 +960,18 @@ onMounted(() => {
     margin-bottom: 2rem;
 }
 
-.icons h3{
+.icons h3 {
     padding-top: 2rem;
     color: white;
 }
 
-.icons p{
+.icons p {
     text-align: justify;
     font-weight: 500;
     margin: 0.5rem;
 }
 
-.icons h3:hover{
+.icons h3:hover {
     color: var(--color-btn);
     font-weight: bold;
 }
@@ -935,13 +984,13 @@ onMounted(() => {
     font-weight: bold;
 }
 
-.paragraph1{
+.paragraph1 {
     color: black;
     padding-top: 1rem;
     text-align: justify;
 }
 
-.paragraph2{
+.paragraph2 {
     color: black;
     padding-top: 1rem;
     font-size: 0.8rem;
@@ -958,7 +1007,7 @@ onMounted(() => {
     transform-style: preserve-3d;
 }
 
-.carousel-item{
+.carousel-item {
     height: 80vh;
 }
 
@@ -966,22 +1015,22 @@ onMounted(() => {
     height: 60vh;
 } */
 
-.carousel-item>img{
+.carousel-item>img {
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: 0 25%;
     opacity: 0.7;
 }
 
-.carousel-indicators button{
+.carousel-indicators button {
     background-color: var(--color-btn);
-    width:10px; 
-    height:10px;  
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: black solid 0.3rem;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     background-color: var(--color-btn);
     border-radius: 50%;
     padding: 1.1rem;
@@ -991,7 +1040,7 @@ onMounted(() => {
     background-size: 60% 60% !important;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-color: var(--color-btn);
     border-radius: 50%;
     padding: 1.1rem;
@@ -1003,7 +1052,7 @@ onMounted(() => {
 
 /*--------------sponsors------------------*/
 
-.sponsors{
+.sponsors {
     display: flex;
     justify-content: center;
     padding: 3rem;
@@ -1011,7 +1060,7 @@ onMounted(() => {
     /* margin: 5rem; */
 }
 
-.container_sponsors{
+.container_sponsors {
     background-image: url(../assets/background-color-dark-table.jpg);
     margin: 3rem 5rem 0rem 5rem;
     border-radius: 5rem 5rem 0rem 0rem;
@@ -1061,4 +1110,115 @@ a:hover {
 .card-img-top {
     border-radius: 0 !important;
 }
+
+@media (max-width: 480px) {
+    .home__discover {
+        flex-wrap: wrap;
+    }
+
+    .home__discover img {
+        width: 10rem;
+    }
+
+    .home__discover h1 {
+        font-size: 1.4rem;
+    }
+
+    .home__crafted {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        padding: 0rem;
+        gap: 0;
+        width: 100%;
+    }
+
+    .home__crafted1 {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .home__crafted2 {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .home__crafted3 {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .home__crafted1 h2 {
+        border-radius: 0;
+    }
+
+    .home__crafted2 h2 {
+        border-radius: 0;
+    }
+
+    .home__crafted3 h2 {
+        border-radius: 0;
+    }
+
+    .btn__more3 {
+        margin-top: 3rem;
+    }
+
+    .home__aromas {
+        padding: 0;
+    }
+    .home__aromas__img{
+        border-radius: 0;
+    }
+    .home__aromas__content{
+        border-radius: 0;
+        gap: 0;
+    }
+    .home__aromas__content{
+        flex-wrap: wrap;
+    }
+    .aromas__img{
+        width: 14rem;
+    }
+    .aromas__text{
+        border-radius: 0;
+    }
+    .quality{
+        flex-wrap: wrap;
+    }
+    .process{
+        flex-wrap: wrap;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    .title2{
+        margin: 0;
+        border-radius: 0;
+    }
+    .brewery_main{
+        flex-wrap: wrap;
+    }
+    .offer{
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .home__icons{
+        margin: 0.5rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .icons{
+        width: 100%;
+    }
+    .container_sponsors{
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 1200px) {}
 </style>
