@@ -19,17 +19,17 @@ const sendMessage = ()=> {
         <h2 class="text-center">WORK ENVIRONMENT</h2>
     </div>
     <div class="team__img">
-        <img class="img__team" src="../assets/Home-4-img-gallery-1.jpg" alt="">
-        <img class="img__team" src="../assets/Home-4-img-gallery-2.jpg" alt="">
-        <img class="img__team" src="../assets/Home-4-img-gallery-3.jpg" alt="">
+        <img class="img__team" src="../assets/home-4-img-gallery-1.jpg" alt="">
+        <img class="img__team" src="../assets/home-4-img-gallery-2.jpg" alt="">
+        <img class="img__team" src="../assets/home-4-img-gallery-3.jpg" alt="">
     </div>
     <div class="team__img">
-        <img class="img__team" src="../assets/Home-4-img-gallery-4.jpg" alt="">
+        <img class="img__team" src="../assets/home-4-img-gallery-4.jpg" alt="">
         <img class="img__team" src="../assets/blog-single-img-2.jpg" alt="">
-        <img class="img__team" src="../assets/Home-4-img-gallery-6.jpg" alt="">
+        <img class="img__team" src="../assets/home-4-img-gallery-6.jpg" alt="">
     </div>
     <div class="team__img">
-        <img class="img__team" src="../assets/Blog-standard-img-5.jpg" alt="">
+        <img class="img__team" src="../assets/blog-standard-img-5.jpg" alt="">
         <img class="img__team" src="../assets/main-home-slider-11.jpg" alt="">
         <img class="img__team" src="../assets/main-home-slider-12.jpg" alt="">
     </div>
