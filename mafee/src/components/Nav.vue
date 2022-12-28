@@ -100,7 +100,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
                 <div class="btns">
                     <RouterLink to="/account" class="btn__login" v-if="!user"> Login </RouterLink>
                     <RouterLink to="/account" class="btn__login" v-if="user"> My account </RouterLink>
-                    <button class="btn__logout" @click="logout(), logoutmesage()">Logout</button>
+                    <button class="btn__logout" @click="logout(), logoutmesage()" v-if="user">Logout</button>
                 </div>
                 
             </div>
