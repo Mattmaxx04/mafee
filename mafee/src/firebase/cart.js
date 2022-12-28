@@ -15,8 +15,7 @@ const getCart= ()=>{
     
       querySnapshot.forEach((doc) => {
         const newCart ={
-          id: doc.id,
-          beerId: doc.data().beerId,
+          id: doc.data().id,
           date: doc.data().date,
           type: doc.data().type,
           userId: doc.data().userId,
