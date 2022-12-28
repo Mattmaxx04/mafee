@@ -1,5 +1,7 @@
 <script setup>
 import {loginWithMail} from '../firebase/auth.js'
+
+
 </script>
 
 <template>

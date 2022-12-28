@@ -7,6 +7,24 @@ import user from '../store/user'
 import { computed } from '@vue/reactivity'
 
 
+const Swal = SweetAlert;
+const where = ()=> {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        confirmButtonText: 'Cool'
+      });
+    }
+
+const logoutmesage = ()=> {
+      Swal.fire({
+        title: 'GoodBye!',
+        text: 'Come back soon!',
+        confirmButtonText: 'Cool'
+      });
+    }    
+    
+
 let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).reduce((beer1, beer2) => beer1 + beer2, 0))
 
 
@@ -15,7 +33,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
 <template>
     <div class="nav__container">
 
-        <a class="where" href="http://">WHERE TO TRY?</a>
+        <button class="where" @click.prevent="where">WHERE TO TRY?</button>
         <div class="nav__links">
             <RouterLink to="/"> HOME </RouterLink>
             <RouterLink to="/about"> WHAT WE OFFER</RouterLink>
@@ -82,7 +100,7 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
                 <div class="btns">
                     <RouterLink to="/account" class="btn__login"> Login </RouterLink>
 
-                    <button class="btn__logout" @click="logout()">Logout</button>
+                    <button class="btn__logout" @click="logout(), logoutmesage()">Logout</button>
                 </div>
                 
             </div>
@@ -133,6 +151,9 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
     margin-left: 1rem;
     margin-top: 2rem;
     font-weight: bold;
+    color: white;
+    background: none;
+    border: none;
 }
 
 .btn__menu {

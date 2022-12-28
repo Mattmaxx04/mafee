@@ -1,5 +1,13 @@
 <script setup>
+const Swal = SweetAlert;
 
+const sendMessage = ()=> {
+  Swal.fire({
+    title: 'Thanks!',
+    text: 'Your CV. has been received.',
+    confirmButtonText: 'Cool'
+  });
+}   
 </script>
 
 <template>
@@ -76,7 +84,7 @@
             </div>
     
             <div class="textbox">
-                <input type="mail" name="mail" id="" required>
+                <input type="mail" name="mail" id="" required >
                 <label>E-mail</label>
             </div>
             <div class="textbox">
@@ -105,7 +113,7 @@
             </div>
             <div class="form-floating form-group textbox">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
+                    style="height: 100px" ></textarea>
                 <label for="floatingTextarea2" class="label-textarea">Notes</label>
             </div>
             <div class="textbox2">
@@ -113,7 +121,7 @@
                 <label>Upload CV</label>
             </div>
     
-            <button class="btn__more2" type="submit">
+            <button @click.prevent="sendMessage()" class="btn__more2" type="submit">
                 <p>SEND</p>
             </button>
         </form>

@@ -18,6 +18,9 @@ const userWithEmail = ref({})
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 //login con google
+
+
+
 const loginWithGoogle = () => {
   signInWithPopup(auth, provider)
     .then((result) => {      

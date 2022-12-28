@@ -1,5 +1,7 @@
 <script setup>
 import {loginWithGoogle} from '../firebase/auth.js'
+
+
 </script>
 
 <template>
