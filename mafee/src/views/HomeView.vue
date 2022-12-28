@@ -725,6 +725,9 @@ a:hover {
         max-height: 32vh;
     }
 
+    .carousel-item{
+        border-radius: 0;
+    }
     .home__crafted {
         flex-direction: column-reverse;
         margin: 1rem;
