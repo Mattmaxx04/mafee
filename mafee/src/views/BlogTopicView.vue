@@ -536,10 +536,12 @@ a{
     .container_main{
     margin: 0.5rem!important;
     flex-wrap: wrap;
+    
   }
     .home_main{
         margin: 0;
         padding: 0;
+        border-radius: 0;
     }
     .home_main img{
         width: 90%;
@@ -549,6 +551,7 @@ a{
         gap: 1rem;
         padding: 1.5rem;
         flex-wrap: wrap;
+        border-radius: 0;
     }
     .home__discover h1{
         font-size: 1.5rem;
