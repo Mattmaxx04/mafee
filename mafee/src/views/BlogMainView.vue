@@ -284,5 +284,44 @@ onMounted(()=>{
 }
 
 
+@media (max-width: 480px) {
+  
 
+    .home_main{
+        margin: 0;
+        border-radius: 0;
+        min-height: 33vh;
+        padding: 0;
+    }
+    .home_main img{
+        width: 100%;
+    }
+    .container_main{
+        flex-direction: column;
+        margin: 0.1rem;
+        margin-top: 1rem;
+        width: 98%;
+        padding: 0;
+        align-items: center;
+    }
+    .social2{
+        flex-wrap: wrap;
+    }
+    .bar-right{
+        width: 90%;
+
+    }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
 </style>

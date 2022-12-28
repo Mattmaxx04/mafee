@@ -46,7 +46,7 @@ const updatePost = computed(()=>{
     </div>
 
 
-    <div class="d-flex container_main">
+    <div class="d-flex container_main ">
         <PostDetails v-for="post of postWithId" :post="post" :key="post.id"/>
        
         <div class="bar-right">
@@ -512,4 +512,46 @@ const updatePost = computed(()=>{
     margin: 0.5rem;
 }
 
+
+
+
+
+@media (max-width: 480px) {
+    .container_main{
+    margin: 0.5rem!important;
+    flex-wrap: wrap;
+  }
+    .home_main{
+        margin: 0;
+        padding: 0;
+    }
+    .home_main img{
+        width: 90%;
+    }
+    .home__discover{
+        margin: 0;
+        gap: 1rem;
+        padding: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .home__discover h1{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    .bar-right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
 </style>

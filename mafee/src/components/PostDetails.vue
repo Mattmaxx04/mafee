@@ -83,65 +83,6 @@ console.log(props.post.id);
         <NewComment :postid="post.id"/>
     </div>
 
-   
-
-
-    <!--
-            <div class="blog_topic">
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, totam distinctio ullam dolorum quisquam ut deserunt animi nam laboriosam.</h2>
-                <p>BREWERY PROCESS</p>
-                <div class="social3">
-                        <div class="social1">
-                            <p>Music, photo</p>
-                        </div>
-                        <div class="social2">
-                            <p>Share:</p>
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-twitter"></i>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-linkedin"></i>
-                        </div>
-                    </div>
-            </div>
--->
-
-    <!--
-            <div class="blog_topic2">
-                <RouterLink to="/blogtopic"> <h2>chain of thoughts</h2> </RouterLink>
-            </div>
-        -->
-    <!-- <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div> -->
 
 </template>
 
@@ -588,5 +529,9 @@ a {
 
 .form-check{
     padding: 2rem 0rem 2rem 3rem;
+}
+
+@media (max-width: 480px) {
+  
 }
 </style>
