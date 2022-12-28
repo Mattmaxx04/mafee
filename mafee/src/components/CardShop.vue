@@ -41,7 +41,7 @@ const addToCart = (beer) => {
         <img :src="beer.img" class="img__beer" alt="beer">
 
         <div class="beer">
-            <h6>{{ beer.type }}</h6>
+            <h6 class="name">{{ beer.type }}</h6>
             <h6 class="price">${{ beer.price }}</h6>
         </div>
         <div class="bottom">
@@ -53,27 +53,40 @@ const addToCart = (beer) => {
                 <button v-if="user" @click="addToCart(beer)"><img src="../assets/addCart-ico.png" alt=""></button>
             </div>
         </div>
-        <p>Stock: {{ beer.stock }}</p>
+        <p class="stock">Stock: {{ beer.stock }}</p>
     </div>
 </template>
 
 <style scoped>
 .beers {
-    max-width: 12vw;
+    max-width: 16vw;
     display: flex;
     flex-direction: column;
     flex: 25%;
-    border: 0.5px black solid;
+    border: 12px var(--color-btn) solid;
+    border-radius: 0rem 0rem 2rem 2rem;
+    border-style: groove;
+    /* padding: 2rem; */
+    /* border-radius: 10% 90% 10% 90% / 75% 15% 85% 25% ; */
+    position: relative;
 }
 
 .beer {
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-around;
+    align-items: center;
     width: 12vw;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .price {
     color: var(--color-primary);
+}
+
+.name{
+    text-transform: uppercase;
 }
 
 .beer h6 {
@@ -99,10 +112,35 @@ const addToCart = (beer) => {
 }
 
 .beer__info {
-    color: var(--color-text-main);
+    color: transparent;
+    position: absolute;
+}
+
+.beer__info p{
+    font-weight: bold;
+}
+
+.beer__info:hover{
+    background-color: var(--color-btn);
+    padding: 2.5rem 2rem 1rem 2rem;
+    color: black;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 1rem;
+    /* position: absolute; */
+    bottom: 10rem;
 }
 
 button img {
     width: 2rem;
+}
+
+.stock{
+    font-weight: bold;
+    border: 4px var(--color-btn) solid;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
 }
 </style>
