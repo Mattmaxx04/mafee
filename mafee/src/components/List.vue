@@ -81,4 +81,38 @@ hr {
     width: 16rem;
     height: 1rem;
 }
+
+@media (max-width: 480px) {
+  
+.list__container{
+    display: flex;
+    margin: 0; 
+    padding: 1rem;
+    flex-direction: column;
+}
+.list_text{
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.list{
+    max-width: 100%;
+}
+
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+
+
 </style>

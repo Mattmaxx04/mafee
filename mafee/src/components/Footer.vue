@@ -137,4 +137,32 @@ a{
 .footer__down__rights{
     margin-right: 20rem;
 }
+@media (max-width: 480px) {
+  
+    .footer__up{
+        flex-wrap: wrap;
+    }
+    .footer__location{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .footer__down{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
+
+
+
 </style>

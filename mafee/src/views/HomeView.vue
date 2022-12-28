@@ -31,7 +31,9 @@ console.log(beers);
                             <h5>get to know us a little more</h5>
                             <p>We invite you to learn a little more about our work and what we offer.</p>
                             <button class="btn__more">
-                                <RouterLink to="/about"> <p> SEE MORE </p></RouterLink>
+                                <RouterLink to="/about">
+                                    <p> SEE MORE </p>
+                                </RouterLink>
                             </button>
                         </div>
                     </div>
@@ -39,9 +41,12 @@ console.log(beers);
                         <img src="../assets/main-home-slider-9.jpg" class="carousel__img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>book a place with us</h5>
-                            <p>Do not miss the opportunity to reserve your favorite beers in advance, as well as a tour of the company or ask for other services.</p>
+                            <p>Do not miss the opportunity to reserve your favorite beers in advance, as well as a tour
+                                of the company or ask for other services.</p>
                             <button class="btn__more">
-                                <RouterLink to="/reservation"> <p> SEE MORE </p> </RouterLink>
+                                <RouterLink to="/reservation">
+                                    <p> SEE MORE </p>
+                                </RouterLink>
                             </button>
                         </div>
                     </div>
@@ -49,9 +54,12 @@ console.log(beers);
                         <img src="../assets/main-home-slider-10.jpg" class="carousel__img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Get in contact with us</h5>
-                            <p>If you have any questions, do not waste time and contact us, we will help you with whatever you need. We will wait for you!</p>
+                            <p>If you have any questions, do not waste time and contact us, we will help you with
+                                whatever you need. We will wait for you!</p>
                             <button class="btn__more">
-                                <RouterLink to="/contactus"> <p> SEE MORE </p> </RouterLink>
+                                <RouterLink to="/contactus">
+                                    <p> SEE MORE </p>
+                                </RouterLink>
                             </button>
                         </div>
                     </div>
@@ -64,7 +72,10 @@ console.log(beers);
     <div class="home__crafted">
         <div class="home__crafted__text">
             <h2>OUR BEGINNINGS</h2>
-            <P>As a company we were born in the year 2022, as a result of an academic project presented at the Faculty of Exact Sciences and Technology, belonging to the National University of Tucumán, for the chair of technology of industrial processes on a pilot scale, corresponding to the career of Chemical engineering.</P>
+            <P>As a company we were born in the year 2022, as a result of an academic project presented at the Faculty
+                of Exact Sciences and Technology, belonging to the National University of Tucumán, for the chair of
+                technology of industrial processes on a pilot scale, corresponding to the career of Chemical
+                engineering.</P>
             <img src="../assets/home3-img-3.png" alt="" srcset="" class="crafted__img">
         </div>
         <div class="home__crafted__img">
@@ -79,9 +90,13 @@ console.log(beers);
                 <img src="../assets/logo_sin_fondo.png" class="aromas__img" alt="" srcset="">
                 <div class="aromas__text">
                     <h2>ENJOY UNIQUE AROMAS</h2>
-                    <p>Be part of this rediscovery of Argentine beer, trying each of the flavors we have. There are not many, but little by little we are growing, dedicating the time that is necessary as long as our products are of quality.</p>
+                    <p>Be part of this rediscovery of Argentine beer, trying each of the flavors we have. There are not
+                        many, but little by little we are growing, dedicating the time that is necessary as long as our
+                        products are of quality.</p>
                     <button class="btn__more button1">
-                        <RouterLink to="/shop"> <p> GO TO THE STORE </p> </RouterLink>
+                        <RouterLink to="/shop">
+                            <p> GO TO THE STORE </p>
+                        </RouterLink>
                     </button>
                 </div>
             </div>
@@ -105,7 +120,9 @@ console.log(beers);
             <div class="brew__cube2">
                 <!-- <img src="../assets/home-04-img-6.png" alt="" srcset=""> -->
                 <button class="btn__more">
-                    <RouterLink to="/workwithus"> <p> JOIN US </p></RouterLink>
+                    <RouterLink to="/workwithus">
+                        <p> JOIN US </p>
+                    </RouterLink>
                 </button>
             </div>
         </div>
@@ -130,7 +147,8 @@ console.log(beers);
         <div class="icons">
             <img src="../assets/main-home-icon-3.png" alt="" srcset="">
             <h3>PACKAGING</h3>
-            <p>As you can see in what the design of the web page is, we also take care of what the design is when it comes to delivering our products in first-line packaging.</p>
+            <p>As you can see in what the design of the web page is, we also take care of what the design is when it
+                comes to delivering our products in first-line packaging.</p>
         </div>
         <div class="icons">
             <img src="../assets/main-home-icon-2.png" alt="" srcset="">
@@ -144,9 +162,14 @@ console.log(beers);
         <div class="culture__img">
             <div class="culture__content">
                 <h3>OUR BEER CULTURE</h3>
-                <p class="culture__content__p">If there is something that defines us Argentines, it is our beer culture. So don't hesitate and be part of this great community, joining us and keeping up to date with each of the news that this great world of beer offers. Register if you are not yet part of this community or, if you do, log in to be able to participate actively.</p>
+                <p class="culture__content__p">If there is something that defines us Argentines, it is our beer culture.
+                    So don't hesitate and be part of this great community, joining us and keeping up to date with each
+                    of the news that this great world of beer offers. Register if you are not yet part of this community
+                    or, if you do, log in to be able to participate actively.</p>
                 <button class="btn__more">
-                    <RouterLink to="/account"> <p> SIGN UP </p> </RouterLink>
+                    <RouterLink to="/account">
+                        <p> SIGN UP </p>
+                    </RouterLink>
                 </button>
             </div>
         </div>
@@ -171,7 +194,8 @@ console.log(beers);
                     <img src="../assets/Blog-standard-img-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">SUMMIT BREWERY</h3>
-                        <p class="card-text">At the brewery summit, we have the opportunity to meet both craft and non-craft breweries, to share a day between beers and show our products.</p>
+                        <p class="card-text">At the brewery summit, we have the opportunity to meet both craft and
+                            non-craft breweries, to share a day between beers and show our products.</p>
                         <a href="#" class="btn__card">READ MORE</a>
                     </div>
                 </div>
@@ -179,7 +203,8 @@ console.log(beers);
                     <img src="../assets/Blog-standard-img-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">CRAFT BEERS BARS</h3>
-                        <p class="card-text">A new craft beer bar was inaugurated in one of the most visited places near the Faculty. Because you have to take a little time to share a delicious beer.</p>
+                        <p class="card-text">A new craft beer bar was inaugurated in one of the most visited places near
+                            the Faculty. Because you have to take a little time to share a delicious beer.</p>
                         <a href="#" class="btn__card">READ MORE</a>
                     </div>
                 </div>
@@ -187,7 +212,9 @@ console.log(beers);
                     <img src="../assets/Blog-standard-img-4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">BEER DAY</h3>
-                        <p class="card-text">The long-awaited day finally arrived and I say this because you know that on the day of beer, beer is given as a gift to all good brewers. So join, don't hesitate.</p>
+                        <p class="card-text">The long-awaited day finally arrived and I say this because you know that
+                            on the day of beer, beer is given as a gift to all good brewers. So join, don't hesitate.
+                        </p>
                         <a href="" class="btn__card">READ MORE</a>
                     </div>
                 </div>
@@ -222,14 +249,14 @@ console.log(beers);
     border: 4px solid var(--color-btn);
 }
 
-.title2{
+.title2 {
     background-image: url(../assets/background-img-color.jpg);
     padding: 5rem;
     margin: 5rem 6rem 2rem 6rem;
     border-radius: 3rem;
 }
 
-.title2 h2{
+.title2 h2 {
     font-weight: bold;
     font-size: 2.2rem;
     color: var(--color-btn);
@@ -241,7 +268,7 @@ console.log(beers);
     padding-top: 0.7rem;
 }
 
-.home__discover__carousel {    
+.home__discover__carousel {
     display: flex;
     margin: 1rem;
     justify-content: center;
@@ -254,15 +281,15 @@ console.log(beers);
     /* opacity: 10; */
 }
 
-.carousel-indicators button{
+.carousel-indicators button {
     background-color: black;
-    width:10px; 
-    height:10px;  
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: var(--color-btn) solid 0.2rem;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     background-color: var(--color-btn);
     border-radius: 50%;
     padding: 1.1rem;
@@ -272,7 +299,7 @@ console.log(beers);
     background-size: 60% 60% !important;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     background-color: var(--color-btn);
     border-radius: 50%;
     padding: 1.1rem;
@@ -282,29 +309,29 @@ console.log(beers);
     background-size: 60% 60% !important;
 }
 
-.carousel-item video{
+.carousel-item video {
     border-radius: 5rem;
     opacity: 0.85;
 }
 
-.carousel-item img{
+.carousel-item img {
     border-radius: 5rem;
     opacity: 0.8;
 }
 
-.carousel-caption h5{
+.carousel-caption h5 {
     padding: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2rem;
 }
 
-.carousel-caption p{
+.carousel-caption p {
     padding: 1rem;
     font-size: 1.2rem;
 }
 
-.carousel-caption button{
+.carousel-caption button {
     margin: 1rem;
 }
 
@@ -347,14 +374,14 @@ console.log(beers);
     gap: 1rem;
 }
 
-.crafted__img1{
+.crafted__img1 {
     width: 23rem;
     height: 23rem;
 }
 
 .crafted__img1:hover {
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 /* .contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
@@ -408,13 +435,13 @@ console.log(beers);
     font-size: 1.4rem;
 }
 
-.aromas__text h2{
+.aromas__text h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.button1 p{
+.button1 p {
     font-weight: bold;
 }
 
@@ -529,34 +556,36 @@ console.log(beers);
     margin-bottom: 2rem;
 }
 
-.icons h3{
+.icons h3 {
     padding-top: 2rem;
 }
 
-.icons p{
+.icons p {
     text-align: justify;
     font-weight: 500;
     margin: 0.5rem;
 }
 
-.icons h3:hover{
+.icons h3:hover {
     color: var(--color-btn);
     font-weight: bold;
 }
 
 /*--------------CULTURE---------------*/
-.home__culture{
+.home__culture {
     background-image: url(../assets/background-madera.jpg);
     padding: 2rem 6rem;
     height: 40rem;
 }
-.culture__img{
+
+.culture__img {
     background-image: url(../assets/main-home-slider-12.jpg);
     height: 100%;
     padding: 1rem;
     border-radius: 5rem;
 }
-.culture__content{
+
+.culture__content {
     padding-left: 21rem;
     padding-right: 21rem;
     align-items: center;
@@ -567,20 +596,24 @@ console.log(beers);
     height: 100%;
     border-radius: 5rem;
 }
-.culture__content p,h3{
+
+.culture__content p,
+h3 {
     color: var(--color-text-ligth);
     font-weight: bold;
 }
-.culture__content p{
+
+.culture__content p {
     font-size: 1rem;
     font-weight: 500;
     text-align: justify;
 }
-.culture__content h3{
+
+.culture__content h3 {
     padding-bottom: 2rem;
 }
 
-.culture__content__p{
+.culture__content__p {
     padding-bottom: 2rem;
 }
 
@@ -656,7 +689,7 @@ a:hover {
     width: 20rem;
 }
 
-.card-body h3{
+.card-body h3 {
     font-weight: bold;
     font-size: 1.3rem;
     text-align: center;
@@ -664,14 +697,14 @@ a:hover {
     padding-top: 1rem;
 }
 
-.card-body p{
+.card-body p {
     font-size: 1rem;
     text-align: justify;
     color: white;
     padding-top: 1rem;
 }
 
-.card-body a{
+.card-body a {
     font-size: 1rem;
     text-align: center;
     color: var(--color-btn);
@@ -679,7 +712,121 @@ a:hover {
     text-align: end;
 }
 
-.card-body{
+.card-body {
     padding-left: 3rem;
 }
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    .carousel__img {
+        max-height: 32vh;
+    }
+
+    .home__crafted {
+        flex-direction: column-reverse;
+        margin: 1rem;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .crafted__img1 {
+        width: 21rem;
+        height: 21rem;
+    }
+    .crafted__img1:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+    .home__aromas {
+        padding: 0.5rem;
+    }
+
+    .home__aromas__content img {
+        width: 12rem;
+    }
+
+    .home__aromas__content {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .title2 {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .brew__img1 {
+        display: none;
+    }
+
+    .brew__img2 {
+        width: 50vw;
+    }
+
+    .brew__img3 {
+        display: none;
+    }
+    .home__icons{
+        padding: 0;
+        margin: 1rem;
+        flex-direction: column;
+    }
+    .icons{
+        width: 100%;
+    }
+    .list__container{
+        padding: 0;
+    }
+    .icons img{
+        width: 40%;
+    }
+    .icons h3{
+        color: var(--color-btn);
+        font-size: 1rem;
+    }
+    .icons p{
+        font-size: 0.8rem;
+    }
+    .home__culture{
+        padding: 1rem;
+    }
+    .culture__content{
+        padding: 0.5rem;
+    }
+    .home__news__cards{
+        padding: 0.1rem;
+        flex-direction: column;
+    }
+    .home__news__frame{
+        padding: 1rem;
+    }
+    .home__crafted__text{
+        margin-left: 0;
+    width: 100%;
+    padding: 1rem; 
+    text-align: center;
+    }
+    .home__crafted__text h2{
+        margin: 0;
+    }
+    .home__crafted__text p{
+        margin: 0;
+    }
+    .home__crafted__text img{
+        margin: 0;
+    }
+    html{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 1200px) {}
 </style>
