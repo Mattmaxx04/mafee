@@ -44,11 +44,11 @@ onMounted(() => {
                 <h2>DESCRIPTIONS</h2>
             </div>
         </div>
-        <button class="btn__more3">
+        <!-- <button class="btn__more3">
             <RouterLink to="">
                 <p> SEE SAMPLE </p>
             </RouterLink>
-        </button>
+        </button> -->
     </div>
 
     <div class="home__aromas">
