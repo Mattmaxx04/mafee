@@ -170,6 +170,7 @@ a{
     background-size: cover;
     margin: 5rem;
     padding-left: 17rem;
+    border-radius: 4rem;
 }
 
 .home__discover {
@@ -187,6 +188,7 @@ a{
     justify-items: center;
     align-items: center;
     color: white;
+    border-radius: 4rem;
 }
 
 .home__discover img{
