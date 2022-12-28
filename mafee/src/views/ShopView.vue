@@ -320,7 +320,7 @@ a{
 /*-------------------OFFERS----------------*/
 
 .special__offer__container {
-    background-image: url('../assets/Shop-home-parallax-img-1.jpg');
+    background-image: url('../assets/shop-home-parallax-img-1.jpg');
     /* background-size: cover; */
     background-repeat: no-repeat;
     background-position: 0% 43%;
@@ -364,7 +364,7 @@ a{
 /*--------------------PRICE LIST-----------------------*/
 
 .price__list {
-    background-image: url('../assets/Menu-page-background-img-4.jpg');
+    background-image: url('../assets/menu-page-background-img-4.jpg');
     background-position: center;
     background-size: cover;
     display: flex;

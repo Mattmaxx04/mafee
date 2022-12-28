@@ -173,7 +173,7 @@ const sendMessage = ()=> {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../assets/Team-title-img.jpg");
+    background-image: url("../assets/team-title-img.jpg");
     background-position: center;
     background-size: cover;
     /* height: 35vh; */
