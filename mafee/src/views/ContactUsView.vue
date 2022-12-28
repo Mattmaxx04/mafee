@@ -303,5 +303,43 @@ a{
     border-top: 6px solid var(--color-btn);
     border-radius: 3rem 3rem 0rem 0rem;
 }
+@media (max-width: 480px) {
+  
+    .title2{
+        margin: 0;
+        border-radius: 0;
+    }
+    .form-img{
+        margin: 1rem;
+    }
+    .title-main{
+        margin: 1rem;
+    }
+    .form-decoration{
+        flex-wrap: wrap;
+    }
+    .column-1{
+        width: 100%;
+    }
+    .column-2{
+        width: 100%;
+    }
+    .iframe{
+        width: 100%;
+        border-radius: 0;
+        border: 6px solid var(--color-btn);
+    }
+}
 
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
+}
 </style>
