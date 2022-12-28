@@ -72,7 +72,7 @@
       <div class="container text-center special">
         <h2>FAQ</h2>
       </div>
-      <div class="d-flex container mb-5">
+      <div class="d-flex container mb-5 accord">
         <div class="accordion accordion-flush container" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -354,5 +354,43 @@
 
 .accordion-body{
   background-image: url(../assets/background-color.jpg);
+}
+
+@media (max-width: 480px) {
+  
+  .title2{
+    margin: 0;
+    border-radius: 0;
+  }
+  .form-img{
+    margin: 1rem;
+  }
+  .title-main{
+    margin: 1rem;
+  }
+  .form-decoration{
+    flex-wrap: wrap;
+  }
+  .faq{
+    border-radius: 0;
+  }
+.accord{
+  flex-wrap: wrap;
+}
+.img-faq{
+  height: 27rem;
+}
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 1200px) {
+  
 }
 </style>
