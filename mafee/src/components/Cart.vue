@@ -10,12 +10,13 @@ console.log(props.BeersCart);
 
     <div class="list">
         <div class="list__up">
-            <div>
+            <div class="beer">
                 <h3>{{ beer.type }}</h3>
             </div>
 
-
-            <h3>{{ beer.quantity }}</h3>
+            <div>
+                <h3>{{ beer.quantity }}</h3>
+            </div>
 
             <h3>${{ beer.price }}</h3>
 
@@ -44,6 +45,10 @@ console.log(props.BeersCart);
 .list__up h3 {
     font-weight: bold;
     color: var(--color-text-dark)
+}
+
+.beer{
+    width: 9rem;
 }
 
 .list__down {

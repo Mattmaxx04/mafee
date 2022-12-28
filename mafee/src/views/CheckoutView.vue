@@ -4,8 +4,17 @@ import cart from '../store/cart';
 import user from '../store/user';
 import DataUser from '../components/DataUser.vue'
 import UserInfo from '../components/UserInfo.vue'
-// import CreditCard from '../components/CreditCard.vue';
 import { computed } from '@vue/reactivity'
+
+const Swal = SweetAlert;
+const where = () => {
+    Swal.fire({
+        title: 'Thank you for your purchase',
+        icon: 'success',
+        imageAlt: 'Custom image',
+    });
+    cart.value=[]
+}
 
 let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).reduce((beer1, beer2) => beer1 + beer2, 0))
 
@@ -30,7 +39,9 @@ let total = computed(() => cart.value.map(beer => beer.quantity * beer.price).re
             <UserInfo :user="user" />
             <DataUser :user="user" />
             <div class="d-flex justify-content-center">
-                <button class="m-3 btn__buy">BUY</button>
+                <router-link @click.prevent="where" class="m-3 btn__buy" to="/">BUY
+                    <!-- <button >BUY</button> -->
+                </router-link>
             </div>
         </div>
 
@@ -248,7 +259,7 @@ input {
     width: 220px;
 }
 
-.btn__buy{
+.btn__buy {
     background: none;
     border: 2px var(--color-text-ligth) solid;
     padding: 5rem;
@@ -268,6 +279,5 @@ input {
     background: black;
     color: var(--color-btn);
     border: 4px solid var(--color-btn);
-} 
-
+}
 </style>

@@ -5,6 +5,7 @@ import { getBeers } from '../firebase/beers.js';
 import { onMounted } from 'vue';
 import Card from '../components/CardShop.vue';
 import List from '../components/List.vue';
+import cart from '../store/cart';
 
 onMounted(() => {
     getBeers()
@@ -36,8 +37,8 @@ const beerFilter = () => {
         <div class="shop__init__text">
             <h2>NEW FLAVORS & OLD QUALITY</h2>
             <h6>Created to inspire your senses to our brands we combine unique flavors with proven quality</h6>
-            <button class="btn__more2">
-                <RouterLink to="/account"> <p> BUY </p> </RouterLink>
+            <button v-if="cart.length != 0" class="btn__more2">
+                <RouterLink  to="/checkout" class="btn__buy"> BUY! </RouterLink>
             </button>
         </div>
         <div>
@@ -174,6 +175,12 @@ const beerFilter = () => {
 
 a{
     text-decoration: none;
+}
+
+.btn__buy{
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-weight: bold;
 }
 
 .shop__init {
