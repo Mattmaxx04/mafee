@@ -1,4 +1,4 @@
-# mewwit
+# Mafee Beers
 
 [![](mafee/src/assets/mafee-beers.svg)]()
 
