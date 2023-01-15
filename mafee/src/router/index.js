@@ -23,6 +23,10 @@ const router = createRouter({
     {
       path: "/blogtopic",
       name: "blogtopic",
+      props: true,
+      props(route) {
+        return {  postid: route.query.postid }
+      },
       component: () => import("../views/BlogTopicView.vue"),
     },
     {
@@ -54,7 +58,12 @@ const router = createRouter({
       path: "/workwithus",
       name: "workwithus",
       component: () => import("../views/WorkWithUsView.vue"),
-    },
+    },    
+    {
+      path: "/checkout",
+      name: "checkout",
+      component: () => import("../views/CheckoutView.vue"),
+    },   
   ]
 })
 
