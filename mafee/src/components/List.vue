@@ -4,6 +4,8 @@ const props = defineProps({
     beer: {},
     typeof: Object
 })
+const prueba = props
+console.log(prueba);
 </script>
 
 <template>
